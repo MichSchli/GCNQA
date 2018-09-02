@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Data
+data/webquestions
+data/glove.6B
+
 # C extensions
 *.so
 

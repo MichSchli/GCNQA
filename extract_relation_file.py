@@ -1,13 +1,14 @@
 import argparse
 
 from code.auxilliaries.graph_reader import GraphReader
+from code.auxilliaries.virtuoso_graph_reader import VirtuosoGraphReader
 
 parser = argparse.ArgumentParser(description='Extract gold relations from a conll file.')
 parser.add_argument('--input_file')
 args = parser.parse_args()
 
 graph_name = "data/toy-125/toy.graph"
-graph_reader = GraphReader(graph_name)
+graph_reader = VirtuosoGraphReader()
 
 entities = []
 scores = []
@@ -24,7 +25,7 @@ printed_nothing = False
 
 
 def process_gathered_entities():
-    max_f1 = 0.0
+    max_f1 = 0.00000001 #very small, but greater than zero, so false edges are labeled as they should be
     suboptimal = []
     optimal = []
     for entity, score in zip(entities, scores):
@@ -43,6 +44,8 @@ def process_gathered_entities():
     if len(optimal) > 0 and len(suboptimal) > 0:
         print("")
     print_lines([line + ["False"] for line in suboptimal])
+
+    exit()
 
     return optimal, suboptimal
 
@@ -65,7 +68,7 @@ with open(args.input_file, 'r') as i_file:
             scores.append(parts[3])
         elif line and reading == 2:
             parts = line.split("\t")
-            golds.append(parts[0])
+            golds.append(parts[1])
         elif not line and reading == 2:
             optimal, suboptimal = process_gathered_entities()
 
@@ -75,6 +78,7 @@ with open(args.input_file, 'r') as i_file:
             golds = []
             scores = []
             should_proceed = True
+            graph_reader.start_new_entity()
 
         if not line:
             reading = (reading + 1) % 3

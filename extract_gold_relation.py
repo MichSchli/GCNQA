@@ -23,7 +23,7 @@ with open(args.input_file, 'r') as i_file:
             entities.append(parts[2])
         elif line and reading == 2:
             parts = line.split("\t")
-            golds.append(parts[0])
+            golds.append(parts[1])
         elif not line and reading == 2:
             max_f1 = 0.0
             best_output = "UNK\tUNK\tUNK"

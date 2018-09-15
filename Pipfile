@@ -8,6 +8,8 @@ name = "pypi"
 [packages]
 mindblocks = {path = "./lib/Mindblocks-0.0.1-py3-none-any.whl"}
 tensorflow = "*"
+tensorflow-hub = "*"
+tensorflow-probability = "*"
 sparqlwrapper = "*"
 
 [requires]

@@ -1,5 +1,7 @@
 import argparse
 
+import sys
+
 from code.auxilliaries.graph_reader import GraphReader
 from code.auxilliaries.virtuoso_graph_reader import VirtuosoGraphReader
 
@@ -14,6 +16,7 @@ entities = []
 scores = []
 golds = []
 reading = 0
+
 
 def print_lines(rel_lines):
     formatted_rel_lines = ["\t".join(line) for line in rel_lines]
@@ -45,11 +48,9 @@ def process_gathered_entities():
         print("")
     print_lines([line + ["False"] for line in suboptimal])
 
-    exit()
-
     return optimal, suboptimal
 
-
+counter = 0
 with open(args.input_file, 'r') as i_file:
     for line in i_file:
         line = line.strip()
@@ -70,6 +71,8 @@ with open(args.input_file, 'r') as i_file:
             parts = line.split("\t")
             golds.append(parts[1])
         elif not line and reading == 2:
+            print("Processing sentence "+str(counter), file=sys.stderr)
+            counter += 1
             optimal, suboptimal = process_gathered_entities()
 
             printed_nothing = len(optimal) == 0 and len(suboptimal) == 0

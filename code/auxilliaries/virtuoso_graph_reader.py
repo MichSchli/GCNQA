@@ -1,5 +1,6 @@
 import time
 
+import sys
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 
@@ -29,10 +30,8 @@ class VirtuosoGraphReader:
 
         return [r["o"]["value"] for r in results["results"]["bindings"]]
 
-    def get_immediate_neighbors(self, entity, forward=True):
-        db_interface = self.initialize_sparql_interface()
-        query_string = self.construct_neighbor_query(entity, hyperedges=False, forward=forward)
-        results = self.execute_query(db_interface, query_string)
+    def get_immediate_neighbors(self, entity, forward=True, hyperedges=False):
+        results = self.query_virtuoso(entity, forward=forward, hyperedges=hyperedges)
 
         return_val = []
         for result in results["results"]["bindings"]:
@@ -54,6 +53,12 @@ class VirtuosoGraphReader:
                 return_val.append([edge, name])
 
         return return_val
+
+    def query_virtuoso(self, entity, forward=True, hyperedges=False):
+        db_interface = self.initialize_sparql_interface()
+        query_string = self.construct_neighbor_query(entity, hyperedges=hyperedges, forward=forward)
+        results = self.execute_query(db_interface, query_string)
+        return results
 
     def get_suboptimal_edges(self, entity, golds):
         return self.suboptimal_rels
@@ -79,13 +84,7 @@ class VirtuosoGraphReader:
         backward_neighbors = self.get_immediate_neighbors(entity, forward=False)
 
         return_d = {}
-        for edge, target in forward_neighbors:
-            if edge not in return_d:
-                return_d[edge] = [target]
-            else:
-                return_d[edge].append(target)
-
-        for edge, target in backward_neighbors:
+        for edge, target in forward_neighbors + backward_neighbors:
             if edge not in return_d:
                 return_d[edge] = [target]
             else:
@@ -93,8 +92,39 @@ class VirtuosoGraphReader:
 
         return return_d
 
+    def get_neighbor_events(self, entity, forward=True):
+        results = self.query_virtuoso(entity, forward=forward, hyperedges=True)
+
+        return_val = []
+        for result in results["results"]["bindings"]:
+            if forward:
+                edge = result["r"]["value"]
+                target = result["o"]["value"]
+            else:
+                edge = result["r"]["value"] + ".inverse"
+                target = result["s"]["value"]
+
+            return_val.append([edge, target])
+
+        return return_val
+
     def get_second_order_neighbors(self, entity):
-        return {}
+        forward_events = self.get_neighbor_events(entity, forward=True)
+        backward_events = self.get_neighbor_events(entity, forward=False)
+
+        return_d = {}
+        for edge_1, event in forward_events + backward_events:
+            forward_neighbors = self.get_immediate_neighbors(event, forward=True, hyperedges=False)
+            backward_neighbors = self.get_immediate_neighbors(event, forward=False, hyperedges=False)
+
+            for edge_2, target in forward_neighbors + backward_neighbors:
+                edge_combined = edge_1 + "\t" + edge_2
+                if edge_combined not in return_d:
+                    return_d[edge_combined] = [target]
+                else:
+                    return_d[edge_combined].append(target)
+
+        return return_d
 
     def get_all_optimal_edges(self, entity, targets):
         nbd = self.get_immediate_neighbor_dict(entity)
@@ -126,7 +156,7 @@ class VirtuosoGraphReader:
             elif max_f1 == f1:
                 max_rels.append(relation)
             else:
-                suboptimal_rels.append(processed_relation)
+                suboptimal_rels.append(relation)
 
         self.suboptimal_rels = suboptimal_rels
 
@@ -175,6 +205,8 @@ class VirtuosoGraphReader:
         query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/common.document.text\" )"
         query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/type.type.instance\" )"
         query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/type.object.type\" )"
+        query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/type.object.name\" )"
+        query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/type.object.alias\" )"
         query_string += " )\n"
 
         query_string += "}"
@@ -195,8 +227,8 @@ class VirtuosoGraphReader:
                 if trial_counter == 5:
                     return None
 
-                print("Query failed. Reattempting in 5 seconds...\n")
-                print(query_string)
+                #print("Query failed. Reattempting in 5 seconds...\n", file=sys.stderr)
+                #print(query_string, file=sys.stderr)
 
                 time.sleep(5)
         return results

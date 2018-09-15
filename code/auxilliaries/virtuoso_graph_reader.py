@@ -15,6 +15,72 @@ class VirtuosoGraphReader:
     def start_new_entity(self):
         self.suboptimal_rels = None
 
+    def query(self, entity, rel_1, rel_2):
+        if rel_1.endswith(".1") and rel_2.endswith(".2") and rel_1[:-2] == rel_2[:-2]:
+            rel = rel_1[:-2]
+            targets = self.query_single(entity, rel, inverse=False)
+        elif rel_2.endswith(".1") and rel_1.endswith(".2") and rel_1[:-2] == rel_2[:-2]:
+            rel = rel_1[:-2]
+            targets = self.query_single(entity, rel, inverse=True)
+        else:
+            rel_1_inverse = rel_1.endswith(".inverse")
+            if rel_1_inverse:
+                rel_1 = rel_1[:-8]
+            rel_2_inverse = rel_2.endswith(".inverse")
+            if rel_2_inverse:
+                rel_2 = rel_2[:-8]
+
+            targets = self.query_hyperedge(entity, rel_1, rel_2, rel_1_inverse=rel_1_inverse, rel_2_inverse=rel_2_inverse)
+
+        return_val = []
+        for target in targets:
+            names = []
+            if target.startswith(self.prefix):
+                names = self.get_names(target)
+
+            if len(names) == 0:
+                names = [target]
+
+            return_val.extend(names)
+
+        return list(set(return_val))
+
+    def query_single(self, entity, relation, inverse):
+        db_interface = self.initialize_sparql_interface()
+
+        query_string = "PREFIX ns: <" + self.prefix + ">\n"
+        query_string += "select * where {\n"
+        if not inverse:
+            query_string += "ns:" + entity.split("/ns/")[-1] + " ns:" + relation.split("/ns/")[-1] + " ?o .\n"
+        else:
+            query_string += "?o ns:" + relation.split("/ns/")[-1] + " ns:" + entity.split("/ns/")[-1] + " .\n"
+
+        query_string += "}"
+        results = self.execute_query(db_interface, query_string)
+
+        return [r["o"]["value"] for r in results["results"]["bindings"]]
+
+    def query_hyperedge(self, entity, rel_1, rel_2, rel_1_inverse, rel_2_inverse):
+        db_interface = self.initialize_sparql_interface()
+
+        query_string = "PREFIX ns: <" + self.prefix + ">\n"
+        query_string += "select * where {\n"
+
+        if not rel_1_inverse:
+            query_string += "ns:" + entity.split("/ns/")[-1] + " ns:" + rel_1.split("/ns/")[-1] + " ?e .\n"
+        else:
+            query_string += "?e ns:" + rel_1.split("/ns/")[-1] + " ns:" + entity.split("/ns/")[-1] + " .\n"
+
+        if not rel_2_inverse:
+            query_string += "?e ns:" + rel_2.split("/ns/")[-1] + " ?o .\n"
+        else:
+            query_string += "?o ns:" + rel_2.split("/ns/")[-1] + " ?e .\n"
+
+        query_string += "}"
+        results = self.execute_query(db_interface, query_string)
+
+        return [r["o"]["value"] for r in results["results"]["bindings"]]
+
     def get_names(self, entity):
         db_interface = self.initialize_sparql_interface()
 
@@ -227,8 +293,8 @@ class VirtuosoGraphReader:
                 if trial_counter == 5:
                     return None
 
-                #print("Query failed. Reattempting in 5 seconds...\n", file=sys.stderr)
-                #print(query_string, file=sys.stderr)
+                print("Query failed. Reattempting in 5 seconds...\n", file=sys.stderr)
+                print(query_string, file=sys.stderr)
 
                 time.sleep(5)
         return results

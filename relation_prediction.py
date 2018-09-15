@@ -1,13 +1,15 @@
 import argparse
 
 from code.auxilliaries.graph_reader import GraphReader
+from code.auxilliaries.virtuoso_graph_reader import VirtuosoGraphReader
 
 parser = argparse.ArgumentParser(description='Predict entities from a relation file.')
 parser.add_argument('--input_file')
 args = parser.parse_args()
 
 graph_name = "data/toy-125/toy.graph"
-graph_reader = GraphReader(graph_name)
+#graph_reader = GraphReader(graph_name)
+graph_reader = VirtuosoGraphReader()
 
 
 first = True

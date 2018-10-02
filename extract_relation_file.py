@@ -74,6 +74,8 @@ with open(args.input_file, 'r') as i_file:
             print("Processing sentence "+str(counter), file=sys.stderr)
             counter += 1
             optimal, suboptimal = process_gathered_entities()
+            print("Found "+str(len(optimal)) + " optimal relations.", file=sys.stderr)
+            print("Found "+str(len(suboptimal)) + " suboptimal relations.", file=sys.stderr)
 
             printed_nothing = len(optimal) == 0 and len(suboptimal) == 0
 

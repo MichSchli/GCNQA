@@ -14,8 +14,8 @@
         </variable>
         <variable name="mode_folder">
             <train_value>train</train_value>
-            <validate_value>train</validate_value>
-            <test_value>train</test_value>
+            <validate_value>valid</validate_value>
+            <test_value>valid_clean</test_value>
         </variable>
         <variable name="embedding_filepath">
         </variable>
@@ -38,7 +38,7 @@
         </component>
 
         <component name="batch_generator" type="BatchGenerator">
-            <batch_size>10</batch_size>
+            <batch_size>50</batch_size>
         </component>
         <edge>
                 <source socket="count">sentence_reader</source>
@@ -70,8 +70,8 @@
 
         <component name="negative_sampler" type="ListNegativeSampler">
             <is_gold_column>4</is_gold_column>
-            <sample_rate>20</sample_rate>
-            <use_all_golds>True</use_all_golds>
+            <sample_rate>10</sample_rate>
+            <pos_sample_rate>2</pos_sample_rate>
         </component>
         <edge>
             <source socket="output">relation_batcher</source>
@@ -164,15 +164,36 @@
                 <target socket="vectors">relation_embedding_lookup</target>
         </edge>
 
+        <component name="debug" type="PassThrough" language="tensorflow">
+        </component>
+        <edge cast="float">
+                <source socket="output">score_slicer</source>
+                <target socket="input">debug</target>
+        </edge>
+
+        <component name="log" type="Log" language="tensorflow">
+        </component>
+        <edge>
+                <source socket="output">debug</source>
+                <target socket="input">log</target>
+        </edge>
+
         <component name="rel_concat" type="Concat" language="tensorflow">
         </component>
         <edge>
                 <source socket="output">relation_embedding_lookup</source>
                 <target socket="left">rel_concat</target>
         </edge>
-        <edge cast="float">
-                <source socket="output">score_slicer</source>
+        <edge>
+                <source socket="output">log</source>
                 <target socket="right">rel_concat</target>
+        </edge>
+
+        <component name="elmo" type="ElmoEmbedding">
+        </component>
+        <edge>
+            <source socket="output">sentence_batcher</source>
+            <target socket="input">elmo</target>
         </edge>
 
         <component name="glove" type="FileEmbeddings">
@@ -247,8 +268,8 @@
                 <target socket="labels">cross_ent</target>
         </edge>
 
-        <component name="upd" type="SGDUpdater" language="tensorflow">
-            <learning_rate>0.01</learning_rate>
+        <component name="upd" type="AdamUpdater" language="tensorflow">
+            <learning_rate>0.001</learning_rate>
             <gradient_clip>5.0</gradient_clip>
             <mark socket="update">update</mark>
         </component>

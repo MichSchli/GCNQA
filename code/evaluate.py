@@ -10,20 +10,26 @@ gold_file = open(args.gold, "r")
 
 
 def compute_p_r_f1(predictions, targets):
-    target = set(targets)
-    predictions = set(predictions)
+    if len(predictions) == 0:
+        return 0, 1, 0
 
-    tp = len(target & predictions)
-    fp = len(predictions) - tp
-    fn = len(target) - tp
+    precision = 0
+    for entity in predictions:
+        if entity in targets:
+            precision += 1
+    precision = float(precision) / len(predictions)
 
-    if tp > 0:
-        precision = float(tp) / (tp + fp)
-        recall = float(tp) / (tp + fn)
+    recall = 0
+    for entity in targets:
+        if entity in predictions:
+            recall += 1
+    recall = float(recall) / len(targets)
 
-        return precision, recall, 2 * ((precision * recall) / (precision + recall))
-    else:
-        return 1.0, 0.0, 0.0
+    f1 = 0
+    if precision + recall > 0:
+        f1 = 2 * recall * precision / (precision + recall)
+
+    return recall, precision, f1
 
 counter = 0
 sum_p = 0
@@ -31,8 +37,8 @@ sum_r = 0
 sum_f1 = 0
 for pred_line, gold_line in zip(pred_file, gold_file):
     counter += 1
-    preds = pred_line.strip().split(",")
-    golds = gold_line.strip().split(",")
+    preds = pred_line.strip().split("\t")
+    golds = gold_line.strip().split("\t")
 
     if len(preds) == 1 and preds[0] == "":
         preds = []

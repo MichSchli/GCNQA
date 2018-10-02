@@ -20,7 +20,7 @@ with open(args.input_file, 'r') as i_file:
             reading += 1
         elif not line:
             reading = 0
-            print(",".join(golds))
+            print("\t".join(golds))
 
             golds = []
             sentences = []

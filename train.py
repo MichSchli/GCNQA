@@ -10,7 +10,7 @@ interface.set_variable("embedding_filepath", embedding_filepath)
 interface.set_variable("data_folder", data_filepath)
 interface.initialize()
 
-interface.train(10)
+interface.train(50)
 
 first = True
 with open("output.txt", 'w') as output_file:
@@ -23,5 +23,3 @@ with open("output.txt", 'w') as output_file:
             print("\t".join([line[0], line[2], line[3]]), file=output_file, end="")
         else:
             print(line, file=output_file, end="")
-
-interface.train()

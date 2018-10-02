@@ -30,4 +30,4 @@ with open(args.input_file, 'r') as pred_file:
             rel2 = parts[2]
 
             predicted_entity = graph_reader.query(entity, rel1, rel2)
-            print(",".join(predicted_entity), end="")
+            print("\t".join(predicted_entity), end="")

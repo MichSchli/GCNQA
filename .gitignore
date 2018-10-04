@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # Data
-data/webquestions
+# data/webquestions
 data/glove.6B
 
 # C extensions

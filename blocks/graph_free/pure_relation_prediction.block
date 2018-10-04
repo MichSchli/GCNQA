@@ -20,7 +20,7 @@
         <variable name="embedding_filepath">
         </variable>
         <variable name="filter_n">
-            <default_value>2</default_value>
+            <default_value>1</default_value>
         </variable>
     </configuration>
     <canvas name="main">
@@ -71,7 +71,7 @@
         <component name="negative_sampler" type="ListNegativeSampler">
             <is_gold_column>4</is_gold_column>
             <sample_rate>10</sample_rate>
-            <pos_sample_rate>2</pos_sample_rate>
+            <pos_sample_rate>1</pos_sample_rate>
         </component>
         <edge>
             <source socket="output">relation_batcher</source>
@@ -185,7 +185,7 @@
                 <target socket="left">rel_concat</target>
         </edge>
         <edge>
-                <source socket="output">log</source>
+                <source socket="output">debug</source>
                 <target socket="right">rel_concat</target>
         </edge>
 

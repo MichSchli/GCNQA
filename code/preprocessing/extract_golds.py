@@ -1,4 +1,5 @@
 import argparse
+import sys
 
 parser = argparse.ArgumentParser(description='Extract gold entities conll file.')
 parser.add_argument('--input_file')

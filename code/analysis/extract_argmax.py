@@ -16,12 +16,13 @@ curr_best_score = None
 
 first = True
 
+line = 0
 for pred, rel in zip(pred_file, rel_file):
     pred = pred.strip()
     rel = rel.strip()
 
     if (not pred and rel) or (not rel and pred):
-        print("\nERROR: Mismatched files")
+        print("\nERROR: Mismatched files at line " + str(line))
         exit()
     if pred:
         score = float(pred)
@@ -40,3 +41,5 @@ for pred, rel in zip(pred_file, rel_file):
 
         curr_best = None
         curr_best_score = None
+
+    line += 1

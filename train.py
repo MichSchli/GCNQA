@@ -28,12 +28,15 @@ def print_debug():
     first = True
     with open("output.txt", 'w') as output_file:
         for line in interface.predict():
+            score_line = [str(score) for score in line]
             if first:
                 first = False
             else:
-                print("\n", file=output_file)
+                print("", file=output_file)
+                if score_line:
+                    print("", file=output_file)
 
-            print("\n".join([str(score) for score in line]), file=output_file, end="")
+            print("\n".join(score_line), file=output_file, end="")
 
 
 for i in range(10):

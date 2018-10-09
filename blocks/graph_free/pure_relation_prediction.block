@@ -15,7 +15,7 @@
         <variable name="mode_folder">
             <train_value>train</train_value>
             <validate_value>valid</validate_value>
-            <test_value>valid_clean</test_value>
+            <test_value>test_clean</test_value>
         </variable>
         <variable name="embedding_filepath">
         </variable>
@@ -185,7 +185,7 @@
                 <target socket="left">rel_concat</target>
         </edge>
         <edge>
-                <source socket="output">debug</source>
+                <source socket="output">log</source>
                 <target socket="right">rel_concat</target>
         </edge>
 
@@ -250,22 +250,23 @@
         <component name="mlp" type="MultilayerPerceptron" language="tensorflow">
             <dimensions>181,200,1</dimensions>
             <dropout_rate>0.5</dropout_rate>
+            <mark socket="output">prediction</mark>
         </component>
         <edge>
                 <source socket="output">end_concat</source>
                 <target socket="input">mlp</target>
         </edge>
 
-        <component name="cross_ent" type="SigmoidCrossEntropy" language="tensorflow">
+        <component name="loss_function" type="HingeLoss" language="tensorflow">
             <mark socket="output">loss</mark>
         </component>
         <edge>
                 <source socket="output">mlp</source>
-                <target socket="logits">cross_ent</target>
+                <target socket="logits">loss_function</target>
         </edge>
         <edge cast="bool">
                 <source socket="output">label_slicer</source>
-                <target socket="labels">cross_ent</target>
+                <target socket="labels">loss_function</target>
         </edge>
 
         <component name="upd" type="AdamUpdater" language="tensorflow">
@@ -274,7 +275,7 @@
             <mark socket="update">update</mark>
         </component>
         <edge>
-                <source socket="output">cross_ent</source>
+                <source socket="output">loss_function</source>
                 <target socket="loss">upd</target>
         </edge>
 
@@ -286,7 +287,6 @@
         </edge>
 
         <component name="rel_chooser" type="IndexIntoList" language="python">
-            <mark socket="output">prediction</mark>
         </component>
         <edge>
             <source socket="output">argmax</source>

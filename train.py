@@ -33,7 +33,7 @@ def print_debug():
             else:
                 print("\n", file=output_file)
 
-            print("\n".join([str(score) for score in line]), file=output_file)
+            print("\n".join([str(score) for score in line]), file=output_file, end="")
 
 
 for i in range(10):

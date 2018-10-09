@@ -20,6 +20,9 @@ for pred, rel in zip(pred_file, rel_file):
     pred = pred.strip()
     rel = rel.strip()
 
+    if (not pred and rel) or (not rel and pred):
+        print("\nERROR: Mismatched files")
+        exit()
     if pred:
         score = float(pred)
         if curr_best_score is None or score > curr_best_score:
@@ -32,7 +35,7 @@ for pred, rel in zip(pred_file, rel_file):
             print("")
 
         if curr_best is not None:
-            rel_parts = curr_best.split("\t")
+            rel_parts = curr_best.strip().split("\t")
             print("\t".join([rel_parts[0], rel_parts[2], rel_parts[3], rel_parts[4]]), end="")
 
         curr_best = None

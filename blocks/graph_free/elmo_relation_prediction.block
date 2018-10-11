@@ -1,0 +1,301 @@
+<block>
+    <configuration>
+        <variable name="max_iterations">
+            <default_value>200</default_value>
+        </variable>
+        <variable name="report_loss_every_n">
+            <default_value>10</default_value>
+        </variable>
+        <variable name="validate_every_n">
+            <default_value>1</default_value>
+        </variable>
+
+        <variable name="data_folder">
+        </variable>
+        <variable name="mode_folder">
+            <train_value>train</train_value>
+            <validate_value>valid</validate_value>
+            <test_value>test_clean</test_value>
+        </variable>
+        <variable name="embedding_filepath">
+        </variable>
+        <variable name="filter_n">
+            <default_value>1</default_value>
+        </variable>
+    </configuration>
+    <canvas name="main">
+        <component name="sentence_reader" type="ConllReader">
+            <file_path>$data_folder/$mode_folder/sentences.conll</file_path>
+            <columns>int,string,string,string,string</columns>
+            <read_column>1</read_column>
+            <start_token>&lt;s&gt;</start_token>
+            <stop_token>&lt;/s&gt;</stop_token>
+        </component>
+
+        <component name="relation_reader" type="ListReader">
+            <file_path>$data_folder/$mode_folder/all_relations.min_$filter_n.txt</file_path>
+            <columns>string,string,string,string</columns>
+            <separator>\t</separator>
+        </component>
+
+        <component name="batch_generator" type="BatchGenerator">
+            <batch_size>50</batch_size>
+        </component>
+        <edge>
+                <source socket="count">sentence_reader</source>
+                <target socket="count">batch_generator</target>
+        </edge>
+        <component name="sentence_batcher" type="Batcher">
+            <lazy>True</lazy>
+        </component>
+        <edge>
+                <source socket="output">sentence_reader</source>
+                <target socket="data">sentence_batcher</target>
+        </edge>
+        <edge>
+                <source socket="batch">batch_generator</source>
+                <target socket="indexes">sentence_batcher</target>
+        </edge>
+
+        <component name="relation_batcher" type="Batcher">
+            <lazy>True</lazy>
+        </component>
+        <edge>
+                <source socket="output">relation_reader</source>
+                <target socket="data">relation_batcher</target>
+        </edge>
+        <edge>
+                <source socket="batch">batch_generator</source>
+                <target socket="indexes">relation_batcher</target>
+        </edge>
+
+        <component name="negative_sampler" type="ListNegativeSampler">
+            <is_gold_column>4</is_gold_column>
+            <sample_rate>10</sample_rate>
+            <pos_sample_rate>1</pos_sample_rate>
+        </component>
+        <edge>
+            <source socket="output">relation_batcher</source>
+            <target socket="list">negative_sampler</target>
+        </edge>
+
+        <component name="ns_split" type="ModeSplitter" language="python">
+        </component>
+        <edge>
+                <source socket="output">negative_sampler</source>
+                <target socket="train">ns_split</target>
+        </edge>
+        <edge>
+                <source socket="output">relation_batcher</source>
+                <target socket="validate">ns_split</target>
+        </edge>
+        <edge>
+                <source socket="output">relation_batcher</source>
+                <target socket="test">ns_split</target>
+        </edge>
+
+        <component name="source_edge_slicer" type="DataSlicer" language="python">
+            <slice>:,:,2</slice>
+        </component>
+        <edge>
+                <source socket="output">ns_split</source>
+                <target socket="input">source_edge_slicer</target>
+        </edge>
+        <component name="target_edge_slicer" type="DataSlicer" language="python">
+            <slice>:,:,3</slice>
+        </component>
+        <edge>
+                <source socket="output">ns_split</source>
+                <target socket="input">target_edge_slicer</target>
+        </edge>
+        <component name="score_slicer" type="DataSlicer" language="python">
+            <slice>:,:,1</slice>
+        </component>
+        <edge>
+                <source socket="output">ns_split</source>
+                <target socket="input">score_slicer</target>
+        </edge>
+        <component name="label_slicer" type="DataSlicer" language="python">
+            <slice>:,:,4</slice>
+        </component>
+        <edge>
+                <source socket="output">ns_split</source>
+                <target socket="input">label_slicer</target>
+        </edge>
+
+        <component name="string_formatter" type="StringFormatter" language="python">
+            <socket type="in">source_edge</socket>
+            <socket type="in">target_edge</socket>
+            <action>[source_edge]->[target_edge]</action>
+        </component>
+        <edge>
+                <source socket="output">source_edge_slicer</source>
+                <target socket="source_edge">string_formatter</target>
+        </edge>
+        <edge>
+                <source socket="output">target_edge_slicer</source>
+                <target socket="target_edge">string_formatter</target>
+        </edge>
+
+        <component name="relation_index" type="VectorIndex">
+            <width>80</width>
+            <length>4000</length>
+            <trainable>True</trainable>
+        </component>
+        <component name="relation_indexer" type="Indexer">
+            <input_type>list</input_type>
+        </component>
+        <edge>
+                <source socket="output">string_formatter</source>
+                <target socket="input">relation_indexer</target>
+        </edge>
+        <edge>
+                <source socket="index">relation_index</source>
+                <target socket="index">relation_indexer</target>
+        </edge>
+
+        <component name="relation_embedding_lookup" type="EmbeddingLookup" language="tensorflow">
+        </component>
+        <edge>
+                <source socket="output">relation_indexer</source>
+                <target socket="indexes">relation_embedding_lookup</target>
+        </edge>
+        <edge>
+                <source socket="vectors">relation_index</source>
+                <target socket="vectors">relation_embedding_lookup</target>
+        </edge>
+
+        <component name="debug" type="PassThrough" language="tensorflow">
+        </component>
+        <edge cast="float">
+                <source socket="output">score_slicer</source>
+                <target socket="input">debug</target>
+        </edge>
+
+        <component name="log" type="Log" language="tensorflow">
+        </component>
+        <edge>
+                <source socket="output">debug</source>
+                <target socket="input">log</target>
+        </edge>
+
+        <component name="rel_concat" type="Concat" language="tensorflow">
+        </component>
+        <edge>
+                <source socket="output">relation_embedding_lookup</source>
+                <target socket="left">rel_concat</target>
+        </edge>
+        <edge>
+                <source socket="output">log</source>
+                <target socket="right">rel_concat</target>
+        </edge>
+
+        <component name="elmo" type="ElmoEmbedding">
+        </component>
+        <edge>
+            <source socket="output">sentence_batcher</source>
+            <target socket="input">elmo</target>
+        </edge>
+
+        <component name="glove" type="FileEmbeddings">
+            <file_path>$embedding_filepath</file_path>
+            <separator> </separator>
+            <width>100</width>
+            <stop_token>&lt;s&gt;</stop_token>
+            <unk_token>&lt;/s&gt;</unk_token>
+        </component>
+        <component name="indexer" type="Indexer">
+            <input_type>sequence</input_type>
+            <input_column>1</input_column>
+        </component>
+        <edge>
+                <source socket="output">sentence_batcher</source>
+                <target socket="input">indexer</target>
+        </edge>
+        <edge>
+                <source socket="index">glove</source>
+                <target socket="index">indexer</target>
+        </edge>
+
+        <component name="embedding_lookup" type="EmbeddingLookup" language="tensorflow">
+        </component>
+        <edge>
+                <source socket="output">indexer</source>
+                <target socket="indexes">embedding_lookup</target>
+        </edge>
+        <edge>
+                <source socket="vectors">glove</source>
+                <target socket="vectors">embedding_lookup</target>
+        </edge>
+
+        <component name="encoder" type="BiRnn" language="tensorflow">
+            <cell>lstm</cell>
+            <dimension>100</dimension>
+        </component>
+        <edge>
+                <source socket="output">embedding_lookup</source>
+                <target socket="input">encoder</target>
+        </edge>
+
+        <component name="end_concat" type="Concat" language="tensorflow">
+        </component>
+        <edge>
+                <source socket="output">rel_concat</source>
+                <target socket="left">end_concat</target>
+        </edge>
+        <edge>
+                <source socket="sentence_embedding">elmo</source>
+                <target socket="right">end_concat</target>
+        </edge>
+
+        <component name="mlp" type="MultilayerPerceptron" language="tensorflow">
+            <dimensions>1105,200,1</dimensions>
+            <dropout_rate>0.5</dropout_rate>
+            <mark socket="output">prediction</mark>
+        </component>
+        <edge>
+                <source socket="output">end_concat</source>
+                <target socket="input">mlp</target>
+        </edge>
+
+        <component name="loss_function" type="HingeLoss" language="tensorflow">
+            <mark socket="output">loss</mark>
+        </component>
+        <edge>
+                <source socket="output">mlp</source>
+                <target socket="logits">loss_function</target>
+        </edge>
+        <edge cast="bool">
+                <source socket="output">label_slicer</source>
+                <target socket="labels">loss_function</target>
+        </edge>
+
+        <component name="upd" type="AdamUpdater" language="tensorflow">
+            <learning_rate>0.001</learning_rate>
+            <gradient_clip>5.0</gradient_clip>
+            <mark socket="update">update</mark>
+        </component>
+        <edge>
+                <source socket="output">loss_function</source>
+                <target socket="loss">upd</target>
+        </edge>
+
+        <component name="argmax" type="Argmax" language="tensorflow">
+        </component>
+        <edge>
+                <source socket="output">mlp</source>
+                <target socket="input">argmax</target>
+        </edge>
+
+        <component name="rel_chooser" type="IndexIntoList" language="python">
+        </component>
+        <edge>
+            <source socket="output">argmax</source>
+            <target socket="indexes">rel_chooser</target>
+        </edge>
+        <edge>
+            <source socket="output">relation_batcher</source>
+            <target socket="list">rel_chooser</target>
+        </edge>
+    </canvas>
+</block>

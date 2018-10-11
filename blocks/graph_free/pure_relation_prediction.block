@@ -189,13 +189,6 @@
                 <target socket="right">rel_concat</target>
         </edge>
 
-        <component name="elmo" type="ElmoEmbedding">
-        </component>
-        <edge>
-            <source socket="output">sentence_batcher</source>
-            <target socket="input">elmo</target>
-        </edge>
-
         <component name="glove" type="FileEmbeddings">
             <file_path>$embedding_filepath</file_path>
             <separator> </separator>

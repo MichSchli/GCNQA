@@ -2,7 +2,7 @@ from Mindblocks.interface import BasicInterface
 
 interface = BasicInterface()
 
-block_filepath = "blocks/graph_free/pure_relation_prediction.block"
+block_filepath = "blocks/graph_free/deep_elmo_relation_prediction.block"
 embedding_filepath = "data/glove.6B/glove.6B.100d.txt"
 data_filepath = "data/webquestions_small_valid"
 interface.load_file(block_filepath)
@@ -39,6 +39,6 @@ def print_debug():
             print("\n".join(score_line), file=output_file, end="")
 
 
-for i in range(10):
+for i in range(20):
     interface.train(5)
     print_debug()

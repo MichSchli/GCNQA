@@ -2,6 +2,7 @@ import argparse
 
 from code.auxilliaries.graph_reader import GraphReader
 from code.auxilliaries.virtuoso_graph_reader import VirtuosoGraphReader
+import sys
 
 parser = argparse.ArgumentParser(description='Predict entities from a relation file.')
 parser.add_argument('--input_file')
@@ -13,6 +14,7 @@ graph_reader = VirtuosoGraphReader()
 
 
 first = True
+q_pointer = 1
 with open(args.input_file, 'r') as pred_file:
     for line in pred_file:
         if first:
@@ -28,6 +30,9 @@ with open(args.input_file, 'r') as pred_file:
             entity = parts[0]
             rel1 = parts[1]
             rel2 = parts[2]
+
+            print("Computing prediction for question #" + str(q_pointer), end="\r", file=sys.stderr)
+            q_pointer += 1
 
             predicted_entity = graph_reader.query(entity, rel1, rel2)
             print("\t".join(predicted_entity), end="")

@@ -1,0 +1,1954 @@
+Question 1:
+Where did Hank Marvin come from ?
+
+Predictions:
+m.01x2fx0	6043.21634860855	http://rdf.freebase.com/ns/people.person.nationality.1	http://rdf.freebase.com/ns/people.person.nationality.2	1.2084413	69	England
+
+True hyperpaths:
+m.01x2fx0	6043.21634860855	http://rdf.freebase.com/ns/location.location.people_born_here.2	http://rdf.freebase.com/ns/location.location.people_born_here.1	-0.9336175	105	Newcastle upon Tyne
+m.01x2fx0	6043.21634860855	http://rdf.freebase.com/ns/people.person.places_lived	http://rdf.freebase.com/ns/people.place_lived.location	-2.6044607	65	Newcastle upon Tyne
+m.01x2fx0	6043.21634860855	http://rdf.freebase.com/ns/people.person.place_of_birth.1	http://rdf.freebase.com/ns/people.person.place_of_birth.2	-1.5788147	105	Newcastle upon Tyne
+m.01x2fx0	6043.21634860855	http://rdf.freebase.com/ns/people.place_lived.person.inverse	http://rdf.freebase.com/ns/people.place_lived.location	-2.9432774	65	Newcastle upon Tyne
+
+Gold entities:
+Newcastle upon Tyne
+
+Error type: 
+ambiguous question
+
+
+Question 2:
+What college did John Nash teach at ?
+
+Predictions:
+m.0pyqh	1325.78415935841	http://rdf.freebase.com/ns/education.education.student.inverse	http://rdf.freebase.com/ns/education.education.institution	1.9344299	121	Bluefield High School | Carnegie Institute of Technology | Princeton University
+
+True hyperpaths:
+m.0pyqh	1325.78415935841	http://rdf.freebase.com/ns/people.person.employment_history	http://rdf.freebase.com/ns/business.employment_tenure.company	-21.742449	15	Massachusetts Institute of Technology | Princeton University
+m.0pyqh	1325.78415935841	http://rdf.freebase.com/ns/people.person.employment_history	http://rdf.freebase.com/ns/business.employer.employees.inverse	-22.958958	15	Massachusetts Institute of Technology | Princeton University
+m.0pyqh	1325.78415935841	http://rdf.freebase.com/ns/business.employment_tenure.person.inverse	http://rdf.freebase.com/ns/business.employer.employees.inverse	-21.695139	15	Massachusetts Institute of Technology | Princeton University
+m.0pyqh	1325.78415935841	http://rdf.freebase.com/ns/business.employment_tenure.person.inverse	http://rdf.freebase.com/ns/business.employment_tenure.company	-23.11219	15	Massachusetts Institute of Technology | Princeton University
+
+Gold entities:
+Princeton University
+
+Error type: 
+wrong relation (more frequent) (similar type)
+
+
+Question 3:
+What is William Taft famous for ?
+
+Predictions:
+m.083pr	13179.3715546686	http://rdf.freebase.com/ns/people.person.profession.1	http://rdf.freebase.com/ns/people.person.profession.2	1.4947066	128	Jurist | Judge | Lawyer
+
+True hyperpaths:
+m.083pr	13179.3715546686	http://rdf.freebase.com/ns/government.politician.government_positions_held	http://rdf.freebase.com/ns/government.government_position_held.office_position_or_title	1.1218908	19	Ohio State Senator | Governor-General of the Philippines | United States Solicitor General | President of the United States | United States Secretary of War
+m.083pr	13179.3715546686	http://rdf.freebase.com/ns/government.government_position_held.office_holder.inverse	http://rdf.freebase.com/ns/government.government_position_held.office_position_or_title	1.0758092	19	Ohio State Senator | Governor-General of the Philippines | United States Solicitor General | President of the United States | United States Secretary of War
+m.083pr	13179.3715546686	http://rdf.freebase.com/ns/government.government_position_held.office_holder.inverse	http://rdf.freebase.com/ns/government.government_office_or_title.office_holders.inverse	1.2391047	19	Ohio State Senator | Governor-General of the Philippines | United States Solicitor General | President of the United States | United States Secretary of War
+m.083pr	13179.3715546686	http://rdf.freebase.com/ns/government.politician.government_positions_held	http://rdf.freebase.com/ns/government.government_office_or_title.office_holders.inverse	1.1975694	19	Ohio State Senator | Governor-General of the Philippines | United States Solicitor General | President of the United States | United States Secretary of War
+
+Gold entities:
+President of the United States
+
+Error type: 
+ambiguous question
+
+
+Question 4:
+What does SS stand for in Hitler 's Army ?
+
+Predictions:
+m.07_m9_	14940.9948842669	http://rdf.freebase.com/ns/government.politician.government_positions_held	http://rdf.freebase.com/ns/government.government_office_or_title.office_holders.inverse	1.6956251	19	Chancellor of Germany
+
+True hyperpaths:
+m.06qmk	21209.8109687328	http://rdf.freebase.com/ns/organization.organization.leadership	http://rdf.freebase.com/ns/organization.leadership.organization	-9.90469	2	Schutzstaffel
+m.06qmk	21209.8109687328	http://rdf.freebase.com/ns/organization.organization.leadership	http://rdf.freebase.com/ns/organization.organization.leadership.inverse	-7.947806	2	Schutzstaffel
+m.06qmk	21209.8109687328	http://rdf.freebase.com/ns/organization.leadership.organization.inverse	http://rdf.freebase.com/ns/organization.leadership.organization	-7.8100047	2	Schutzstaffel
+m.06qmk	21209.8109687328	http://rdf.freebase.com/ns/common.topic.article	http://rdf.freebase.com/ns/common.topic.article.inverse	-5.7362657	122	Schutzstaffel
+m.06qmk	21209.8109687328	http://rdf.freebase.com/ns/organization.leadership.organization.inverse	http://rdf.freebase.com/ns/organization.organization.leadership.inverse	-8.280754	2	Schutzstaffel
+m.06qmk	21209.8109687328	http://rdf.freebase.com/ns/dataworld.gardening_hint.last_referenced_by.inverse	http://rdf.freebase.com/ns/dataworld.gardening_hint.last_referenced_by	-5.6160054	110	Schutzstaffel
+m.06qmk	21209.8109687328	http://rdf.freebase.com/ns/organization.organization.headquarters	http://rdf.freebase.com/ns/organization.organization.headquarters.inverse	-7.8807073	4	Schutzstaffel
+
+Gold entities:
+Schutzstaffel
+
+Error type: 
+gold relation wrong
+
+
+Question 5:
+When was the Leafs last in the playoffs ?
+
+Predictions:
+m.0j6tr	793.472145035909	http://rdf.freebase.com/ns/base.events.event_feed.event_presenting_organisation.inverse	http://rdf.freebase.com/ns/base.events.type_of_event.event_feeds_for_this_type_of_event.inverse	0.90295815	1	Ice Hockey
+
+True hyperpaths:
+m.0j6tr	793.472145035909	http://rdf.freebase.com/ns/sports.sports_championship_event.champion.2	http://rdf.freebase.com/ns/sports.sports_championship_event.champion.1	-1.5852549	59	1945 Stanley Cup Finals | 1947 Stanley Cup Finals | 1948 Stanley Cup Finals | 1951 Stanley Cup Finals | 1964 Stanley Cup Finals | 1949 Stanley Cup Finals | 1942 Stanley Cup Finals | 1963 Stanley Cup Finals | 1962 Stanley Cup Finals | 1967 Stanley Cup Finals | [ and 1 more. ]
+m.0j6tr	793.472145035909	http://rdf.freebase.com/ns/sports.sports_team.championships.1	http://rdf.freebase.com/ns/sports.sports_team.championships.2	-0.41529202	59	1945 Stanley Cup Finals | 1947 Stanley Cup Finals | 1948 Stanley Cup Finals | 1951 Stanley Cup Finals | 1964 Stanley Cup Finals | 1949 Stanley Cup Finals | 1942 Stanley Cup Finals | 1963 Stanley Cup Finals | 1962 Stanley Cup Finals | 1967 Stanley Cup Finals | [ and 1 more. ]
+
+Gold entities:
+1967 Stanley Cup Finals
+
+Error type: 
+comparative
+
+
+Question 6:
+What does Kim Kardashian work as ?
+
+Predictions:
+m.0261x8t	26380.3267183774	http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor.inverse	http://rdf.freebase.com/ns/tv.regular_tv_appearance.character	1.4879454	9	Elle | Nikki LePree
+
+True hyperpaths:
+m.0261x8t	26380.3267183774	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.2	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.1	0.59780437	128	Actor | Businessperson | Entrepreneur | Model
+m.0261x8t	26380.3267183774	http://rdf.freebase.com/ns/people.person.profession.1	http://rdf.freebase.com/ns/people.person.profession.2	0.45366442	128	Actor | Businessperson | Entrepreneur | Model
+
+Gold entities:
+Entrepreneur	Model	Businessperson	Actor
+
+Error type: 
+wrong relation (less frequent) (different type)
+
+
+Question 7:
+Where are the NATO headquarters located ?
+
+Predictions:
+m.059dn	14899.7110988228	http://rdf.freebase.com/ns/book.book_subject.works.1	http://rdf.freebase.com/ns/book.book_subject.works.2	-0.36311662	25	The Dawn of Peace in Europe
+
+True hyperpaths:
+m.059dn	14899.7110988228	http://rdf.freebase.com/ns/organization.membership_organization.members	http://rdf.freebase.com/ns/organization.organization_membership.member	-3.4458961	2	Bulgaria | Poland | United Kingdom | Netherlands | Germany | United States of America
+m.059dn	14899.7110988228	http://rdf.freebase.com/ns/organization.membership_organization.members	http://rdf.freebase.com/ns/organization.organization_member.member_of.inverse	-3.8920188	2	Bulgaria | Poland | United Kingdom | Netherlands | Germany | United States of America
+m.059dn	14899.7110988228	http://rdf.freebase.com/ns/organization.organization_membership.organization.inverse	http://rdf.freebase.com/ns/organization.organization_member.member_of.inverse	-4.616327	2	Bulgaria | Poland | United Kingdom | Netherlands | Germany | United States of America
+m.059dn	14899.7110988228	http://rdf.freebase.com/ns/organization.organization_membership.organization.inverse	http://rdf.freebase.com/ns/organization.organization_membership.member	-4.615474	2	Bulgaria | Poland | United Kingdom | Netherlands | Germany | United States of America
+
+Gold entities:
+Netherlands	Poland	United States of America	United Kingdom	Germany	Bulgaria
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 8:
+What did James K Polk do before he was president ?
+
+Predictions:
+m.042f1	13297.4173723224	http://rdf.freebase.com/ns/government.politician.government_positions_held	http://rdf.freebase.com/ns/government.government_office_or_title.office_holders.inverse	2.8487544	19	Speaker of the United States House of Representatives | President of the United States | United States Representative | Governor of Tennessee
+
+True hyperpaths:
+m.042f1	13297.4173723224	http://rdf.freebase.com/ns/people.person.profession.1	http://rdf.freebase.com/ns/people.person.profession.2	1.5436676	128	Politician | Farmer | Lawyer
+m.042f1	13297.4173723224	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.2	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.1	1.6684748	128	Politician | Farmer | Lawyer
+
+Gold entities:
+Lawyer
+
+Error type: 
+ambiguous question
+
+
+Question 9:
+What type of government does Brazil have 2011 ?
+
+Predictions:
+m.015fr	26656.9298627936	http://rdf.freebase.com/ns/government.form_of_government.countries.2	http://rdf.freebase.com/ns/government.form_of_government.countries.1	1.855397	59	Constitutional republic | Federal republic | Presidential system
+
+True hyperpaths:
+m.015fr	26656.9298627936	http://rdf.freebase.com/ns/organization.organization_scope.organizations_with_this_scope.1	http://rdf.freebase.com/ns/organization.organization_scope.organizations_with_this_scope.2	-7.811291	4	Pirate Party of Brazil | Brazilian Communist Party | Brazilian Social Democratic Party | Central Autônoma de Trabalhadores | Brazilian Socialist Party | Central Única dos Trabalhadores | Republican Party of São Paulo | National Renewal Alliance Party | Progressive Republican Party | Humanist Party of Solidarity | [ and 48 more. ]
+m.015fr	26656.9298627936	http://rdf.freebase.com/ns/organization.organization.geographic_scope.2	http://rdf.freebase.com/ns/organization.organization.geographic_scope.1	-8.204956	4	Pirate Party of Brazil | Brazilian Communist Party | Brazilian Social Democratic Party | Central Autônoma de Trabalhadores | Brazilian Socialist Party | Central Única dos Trabalhadores | Republican Party of São Paulo | National Renewal Alliance Party | Progressive Republican Party | Humanist Party of Solidarity | [ and 48 more. ]
+
+Gold entities:
+Brazilian Labour Renewal Party
+
+Error type: 
+ambiguous question
+
+
+Question 10:
+What season did Lana Lang leave Smallville ?
+
+Predictions:
+m.019xcj	60885.3065967285	http://rdf.freebase.com/ns/fictional_universe.fictional_character.romantically_involved_with	http://rdf.freebase.com/ns/fictional_universe.fictional_character.romantically_involved_with.inverse	0.9169192	3	Superman | Lana Lang
+
+True hyperpaths:
+m.05df8dr	1.4245129342776	http://rdf.freebase.com/ns/common.topic.article	http://rdf.freebase.com/ns/common.topic.article.inverse	-6.937722	122	Smallville - Season 8
+m.05df8dr	1.4245129342776	http://rdf.freebase.com/ns/dataworld.gardening_hint.last_referenced_by.inverse	http://rdf.freebase.com/ns/dataworld.gardening_hint.last_referenced_by	-6.9592175	110	Smallville - Season 8
+m.05df8dr	1.4245129342776	http://rdf.freebase.com/ns/dataworld.gardening_hint.replaced_by.inverse	http://rdf.freebase.com/ns/dataworld.gardening_hint.replaced_by	-6.8040605	48	Smallville - Season 8
+
+Gold entities:
+Smallville - Season 8
+
+Error type: 
+multi entity
+
+
+Question 11:
+What type of government does USA follow ?
+
+Predictions:
+m.09c7w0	756.741264138729	http://rdf.freebase.com/ns/location.location.contains.1	http://rdf.freebase.com/ns/location.location.contains.2	0.7214934	40	Blounts Creek | Gorman | James Mill | Shell Island | Prince George | Burnt Mills | Wichita Technical Institute | Hensley | 62984 | Nash Ford | [ and 35341 more. ]
+
+True hyperpaths:
+
+Gold entities:
+Federal republic
+
+Error type: 
+no gold
+
+
+Question 12:
+Where do the Appalachian Mountains run ?
+
+Predictions:
+m.0lm0n	15852.9316374959	http://rdf.freebase.com/ns/location.location.containedby.1	http://rdf.freebase.com/ns/location.location.containedby.2	0.46423954	115	North America
+
+True hyperpaths:
+
+Gold entities:
+Eastern United States
+
+Error type: 
+ambiguous question
+
+
+Question 13:
+Who did Carrie Ann Inaba get engaged to ?
+
+Predictions:
+m.073plk	109520.814653451	http://rdf.freebase.com/ns/location.location.people_born_here.2	http://rdf.freebase.com/ns/location.location.people_born_here.1	0.4246146	105	Honolulu
+
+True hyperpaths:
+m.073plk	109520.814653451	http://rdf.freebase.com/ns/people.person.spouse_s	http://rdf.freebase.com/ns/people.person.spouse_s.inverse	-0.5765581	75	Carrie Ann Inaba | Jesse Sloan
+m.073plk	109520.814653451	http://rdf.freebase.com/ns/people.marriage.spouse.inverse	http://rdf.freebase.com/ns/people.marriage.spouse	0.029754281	75	Carrie Ann Inaba | Jesse Sloan
+m.073plk	109520.814653451	http://rdf.freebase.com/ns/people.person.spouse_s	http://rdf.freebase.com/ns/people.marriage.spouse	-0.02697575	75	Carrie Ann Inaba | Jesse Sloan
+m.073plk	109520.814653451	http://rdf.freebase.com/ns/people.marriage.spouse.inverse	http://rdf.freebase.com/ns/people.person.spouse_s.inverse	-0.45628238	75	Carrie Ann Inaba | Jesse Sloan
+
+Gold entities:
+Jesse Sloan
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 14:
+Who wrote St Trinians ?
+
+Predictions:
+m.02qsqmq	14686.6697921408	http://rdf.freebase.com/ns/film.film.starring	http://rdf.freebase.com/ns/film.actor.film.inverse	0.647876	6	Millie Foster | Kathryn Drysdale | Gemma Arterton | Fenella Woolgar | Holly Mackie | Sarah Harding | Jodie Whittaker | Amara Karan | Colin Firth | Talulah Riley | [ and 19 more. ]
+
+True hyperpaths:
+
+Gold entities:
+Ronald Searle
+
+Error type: 
+no gold
+
+
+Question 15:
+Which island is Kailua on ?
+
+Predictions:
+m.0r_g0	74.5657412344449	http://rdf.freebase.com/ns/location.location.time_zones.1	http://rdf.freebase.com/ns/location.location.time_zones.2	0.19389689	69	Hawaii–Aleutian Time Zone
+
+True hyperpaths:
+m.0r_x0	3921.48789695436	http://rdf.freebase.com/ns/location.mailing_address.citytown.inverse	http://rdf.freebase.com/ns/location.mailing_address.state_province_region	-2.8643613	8	Hawaii
+m.0r_g0	74.5657412344449	http://rdf.freebase.com/ns/location.mailing_address.citytown.inverse	http://rdf.freebase.com/ns/location.mailing_address.state_province_region	-2.5539784	8	Hawaii
+
+Gold entities:
+Hawaii
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 16:
+Who is the Arizona Cardinals backup quarterback ?
+
+Predictions:
+m.0ws7	25885.9987818551	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.player.nfl_team.1	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.player.nfl_team.2	1.2764683	7	Arizona Cardinals
+
+True hyperpaths:
+m.0ws7	25885.9987818551	http://rdf.freebase.com/ns/american_football.football_team.current_roster	http://rdf.freebase.com/ns/sports.pro_athlete.teams.inverse	0.13271642	3	Antoine Cason | Jerraud Powers | Adam Snyder | Colin Parker | Lyle Sendlein | Mike Leach | Mike Gibson | Kory Sperry | Jeff King | Reggie Walker | [ and 57 more. ]
+m.0ws7	25885.9987818551	http://rdf.freebase.com/ns/american_football.football_roster_position.team.inverse	http://rdf.freebase.com/ns/sports.pro_athlete.teams.inverse	-0.52623105	3	Antoine Cason | Jerraud Powers | Adam Snyder | Colin Parker | Lyle Sendlein | Mike Leach | Mike Gibson | Kory Sperry | Jeff King | Reggie Walker | [ and 57 more. ]
+m.0ws7	25885.9987818551	http://rdf.freebase.com/ns/american_football.football_team.current_roster	http://rdf.freebase.com/ns/sports.sports_team_roster.player	0.09533024	3	Antoine Cason | Jerraud Powers | Adam Snyder | Colin Parker | Lyle Sendlein | Mike Leach | Mike Gibson | Kory Sperry | Jeff King | Reggie Walker | [ and 57 more. ]
+m.0ws7	25885.9987818551	http://rdf.freebase.com/ns/american_football.football_roster_position.team.inverse	http://rdf.freebase.com/ns/sports.sports_team_roster.player	-0.7635882	3	Antoine Cason | Jerraud Powers | Adam Snyder | Colin Parker | Lyle Sendlein | Mike Leach | Mike Gibson | Kory Sperry | Jeff King | Reggie Walker | [ and 57 more. ]
+
+Gold entities:
+John Skelton
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 17:
+Where are you from in Malayalam ?
+
+Predictions:
+m.0999q	2.45049554479718	http://rdf.freebase.com/ns/language.language_writing_system.languages.2	http://rdf.freebase.com/ns/language.language_writing_system.languages.1	2.7236369	2	Arabic alphabet | Malayalam alphabet | Latin alphabet | Vatteluttu alphabet | Pahlavi scripts
+
+True hyperpaths:
+m.0byh8j	1.65501615855995	http://rdf.freebase.com/ns/location.country.administrative_divisions.2	http://rdf.freebase.com/ns/location.country.administrative_divisions.1	0.20517641	13	India
+m.0byh8j	1.65501615855995	http://rdf.freebase.com/ns/base.aareas.schema.administrative_area.administrative_parent.1	http://rdf.freebase.com/ns/base.aareas.schema.administrative_area.administrative_parent.2	-1.6261086	14	India
+m.0999q	2.45049554479718	http://rdf.freebase.com/ns/language.human_language.main_country.1	http://rdf.freebase.com/ns/language.human_language.main_country.2	2.4981506	21	India
+m.0byh8j	1.65501615855995	http://rdf.freebase.com/ns/location.location.contains.2	http://rdf.freebase.com/ns/location.location.contains.1	-1.282309	114	India
+m.0byh8j	1.65501615855995	http://rdf.freebase.com/ns/base.biblioness.bibs_location.country.1	http://rdf.freebase.com/ns/base.biblioness.bibs_location.country.2	-1.3146465	12	India
+m.0byh8j	1.65501615855995	http://rdf.freebase.com/ns/film.film_regional_release_date.film_regional_debut_venue.inverse	http://rdf.freebase.com/ns/film.film_regional_release_date.film_release_region	-5.101212	2	India
+m.0byh8j	1.65501615855995	http://rdf.freebase.com/ns/location.location.containedby.1	http://rdf.freebase.com/ns/location.location.containedby.2	-2.2618518	115	India
+m.0byh8j	1.65501615855995	http://rdf.freebase.com/ns/base.aareas.schema.administrative_area.administrative_children.2	http://rdf.freebase.com/ns/base.aareas.schema.administrative_area.administrative_children.1	-1.6630094	14	India
+m.0byh8j	1.65501615855995	http://rdf.freebase.com/ns/location.administrative_division.country.1	http://rdf.freebase.com/ns/location.administrative_division.country.2	-1.181303	13	India
+
+Gold entities:
+India
+
+Error type: 
+bad question
+
+
+Question 18:
+Where is Spanish spoken most ?
+
+Predictions:
+m.06nm1	1.78934397996167	http://rdf.freebase.com/ns/broadcast.radio_station.format.2	http://rdf.freebase.com/ns/broadcast.radio_station.format.1	2.5410538	1	KOTK | KQLM | KSMY | WCHK | KGLA | WONQ | Radio Austral | WMBI | WLAT | KLOB | [ and 178 more. ]
+
+True hyperpaths:
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.internet_users_percent_population	http://rdf.freebase.com/ns/location.statistical_region.internet_users_percent_population.inverse	-2.709229	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.broadband_penetration_rate	http://rdf.freebase.com/ns/location.statistical_region.broadband_penetration_rate.inverse	-0.9901037	13	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/sports.sport_country.athletes	http://rdf.freebase.com/ns/sports.competitor_country_relationship.country	-2.0159874	16	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.mailing_address.country.inverse	http://rdf.freebase.com/ns/location.mailing_address.country	-1.7051618	21	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.long_term_unemployment_rate	http://rdf.freebase.com/ns/location.statistical_region.long_term_unemployment_rate.inverse	-1.6619501	23	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/dataworld.property_value_assignment.value_if_topic.inverse	http://rdf.freebase.com/ns/dataworld.property_value_assignment.value_if_topic	0.87778175	6	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.robert.earthquakes.earthquake_nearest_location.location.inverse	http://rdf.freebase.com/ns/user.robert.earthquakes.earthquake_nearest_location.location	-4.3524213	3	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/olympics.olympic_participating_country.medals_won	http://rdf.freebase.com/ns/olympics.olympic_medal_honor.country	-2.2949457	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.labor_participation_rate	http://rdf.freebase.com/ns/location.statistical_region.labor_participation_rate.inverse	-2.2875748	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.agriculture_as_percent_of_gdp	http://rdf.freebase.com/ns/location.statistical_region.agriculture_as_percent_of_gdp.inverse	-1.7361388	27	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/olympics.olympic_participating_country.medals_won	http://rdf.freebase.com/ns/olympics.olympic_participating_country.medals_won.inverse	-2.0329418	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.casualties.combatant.inverse	http://rdf.freebase.com/ns/military.casualties.combatant	-1.3436437	9	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.skud.legal.treaty_signature.signatory.inverse	http://rdf.freebase.com/ns/user.skud.legal.treaty_signature.signatory	-0.8956479	5	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.part_time_employment_percent	http://rdf.freebase.com/ns/location.statistical_region.part_time_employment_percent.inverse	-2.3913143	21	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.co2_emissions_per_capita	http://rdf.freebase.com/ns/location.statistical_region.co2_emissions_per_capita.inverse	-2.476759	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.skud.embassies_and_consulates.ambassadorial_tenure.to_countries.inverse	http://rdf.freebase.com/ns/user.skud.embassies_and_consulates.ambassadorial_tenure.to_countries	-1.8065534	15	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/organization.organization_member.member_of	http://rdf.freebase.com/ns/organization.organization_membership.member	-2.2559211	32	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/people.marriage.location_of_ceremony.inverse	http://rdf.freebase.com/ns/people.marriage.location_of_ceremony	-2.4816885	32	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.athletics.athletics_country.championships_athletes_performances	http://rdf.freebase.com/ns/base.athletics.athletics_championships_competition_athlete_relationship.country	-1.9650264	9	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/olympics.olympic_athlete_affiliation.country.inverse	http://rdf.freebase.com/ns/olympics.olympic_athlete_affiliation.country	-1.6667504	27	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/olympics.olympic_medal_honor.country.inverse	http://rdf.freebase.com/ns/olympics.olympic_medal_honor.country	-2.4976006	27	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_combatant.force_deployments	http://rdf.freebase.com/ns/military.military_combatant.force_deployments.inverse	-2.6082132	10	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/government.national_anthem_of_a_country.country.inverse	http://rdf.freebase.com/ns/government.national_anthem_of_a_country.country	-2.0703259	28	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.places_exported_to	http://rdf.freebase.com/ns/location.imports_and_exports.imported_from	-1.8935013	20	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/sports.sport_country.athletic_performances	http://rdf.freebase.com/ns/sports.sport_country.athletic_performances.inverse	-1.9988503	21	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.skud.boats.naval_engagement_participation.side.inverse	http://rdf.freebase.com/ns/user.skud.boats.naval_combatant.naval_engagements.inverse	-1.354815	4	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.popstra.location.arrestee	http://rdf.freebase.com/ns/base.popstra.location.arrestee.inverse	0.21033764	6	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/common.webpage.topic.inverse	http://rdf.freebase.com/ns/common.webpage.topic	-3.947825	103	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office.inverse	http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials.inverse	-2.6906738	40	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/symbols.flag_referent.flag	http://rdf.freebase.com/ns/symbols.flag_referent.flag.inverse	-1.789516	35	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.deposit_interest_rate	http://rdf.freebase.com/ns/location.statistical_region.deposit_interest_rate.inverse	-1.6223993	26	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.ontologies.ontology_instance_mapping.freebase_topic.inverse	http://rdf.freebase.com/ns/base.ontologies.ontology_instance_mapping.freebase_topic	-3.3237486	56	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials	http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office	-3.556768	40	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.gdp_nominal_per_capita	http://rdf.freebase.com/ns/location.statistical_region.gdp_nominal_per_capita.inverse	-3.3996544	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.popstra.vacation_choice.location.inverse	http://rdf.freebase.com/ns/base.popstra.vacation_choice.location	-2.604367	23	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/sports.sport_country.athletic_performances	http://rdf.freebase.com/ns/sports.competitor_competition_relationship.country	-2.0067303	21	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.skud.boats.naval_combatant.naval_engagements	http://rdf.freebase.com/ns/user.skud.boats.naval_engagement_participation.side	-1.3319201	6	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.places_exported_to	http://rdf.freebase.com/ns/location.statistical_region.places_exported_to.inverse	-1.19606	20	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.diesel_price_liter	http://rdf.freebase.com/ns/location.statistical_region.diesel_price_liter.inverse	-2.032321	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.time_required_to_start_a_business	http://rdf.freebase.com/ns/location.statistical_region.time_required_to_start_a_business.inverse	-1.753783	27	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.market_cap_of_listed_companies_as_percent_of_gdp	http://rdf.freebase.com/ns/location.statistical_region.market_cap_of_listed_companies_as_percent_of_gdp.inverse	-1.6806946	26	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.peleton.cycling_team_based_at.country.inverse	http://rdf.freebase.com/ns/base.peleton.cycling_team_based_at.country	-1.1818126	12	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.consumer_price_index	http://rdf.freebase.com/ns/location.statistical_region.consumer_price_index.inverse	-2.1499639	28	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.gender_balance_members_of_parliament	http://rdf.freebase.com/ns/location.statistical_region.gender_balance_members_of_parliament.inverse	-1.561465	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.tsegaran.random.taxonomy_subject.entry	http://rdf.freebase.com/ns/user.tsegaran.random.taxonomy_subject.entry.inverse	-1.7119617	55	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.popstra.location.vacationers	http://rdf.freebase.com/ns/base.popstra.vacation_choice.location	-2.424282	23	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.ontologies.ontology_instance_mapping.freebase_topic.inverse	http://rdf.freebase.com/ns/base.ontologies.ontology_instance.equivalent_instances.inverse	-2.9421759	56	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.casualties.combatant.inverse	http://rdf.freebase.com/ns/military.military_combatant.casualties.inverse	-1.059126	9	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.skud.legal.treaty_signatory.treaties_signed	http://rdf.freebase.com/ns/user.skud.legal.treaty_signature.signatory	-1.9409454	5	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_combatant.military_conflicts	http://rdf.freebase.com/ns/military.military_combatant_group.combatants	-3.37751	12	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.health_expenditure_as_percent_of_gdp	http://rdf.freebase.com/ns/location.statistical_region.health_expenditure_as_percent_of_gdp.inverse	-1.7855294	28	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.prevalence_of_undernourisment	http://rdf.freebase.com/ns/location.statistical_region.prevalence_of_undernourisment.inverse	-0.78183556	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.imports_and_exports.exported_to.inverse	http://rdf.freebase.com/ns/location.statistical_region.places_imported_from.inverse	-1.156076	19	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/freebase.list_entry.topic.inverse	http://rdf.freebase.com/ns/freebase.list_entry.topic	-2.7382207	36	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.skud.boats.naval_engagement_participation.side.inverse	http://rdf.freebase.com/ns/user.skud.boats.naval_engagement_participation.side	-0.9492109	4	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.population_growth_rate	http://rdf.freebase.com/ns/location.statistical_region.population_growth_rate.inverse	-1.7795315	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.gross_enrollment_ratio_primary_school	http://rdf.freebase.com/ns/location.statistical_region.gross_enrollment_ratio_primary_school.inverse	-1.011486	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/royalty.system_of_nobility.titles	http://rdf.freebase.com/ns/royalty.system_title_relationship.system	-2.6625102	3	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.ontologies.ontology_instance.equivalent_instances	http://rdf.freebase.com/ns/base.ontologies.ontology_instance_mapping.freebase_topic	-3.57097	56	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.gni_in_ppp_dollars	http://rdf.freebase.com/ns/location.statistical_region.gni_in_ppp_dollars.inverse	-2.6938286	27	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.popstra.arrest.location.inverse	http://rdf.freebase.com/ns/base.popstra.location.arrestee.inverse	-0.5126734	6	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.mailing_address.state_province_region.inverse	http://rdf.freebase.com/ns/location.mailing_address.state_province_region	-1.710412	38	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.government_debt_percent_gdp	http://rdf.freebase.com/ns/location.statistical_region.government_debt_percent_gdp.inverse	-1.2005364	15	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_command.military_combatant.inverse	http://rdf.freebase.com/ns/military.military_combatant.military_commanders.inverse	-2.8140187	20	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.electricity_consumption_per_capita	http://rdf.freebase.com/ns/location.statistical_region.electricity_consumption_per_capita.inverse	-1.5192108	28	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/organization.organization_membership.member.inverse	http://rdf.freebase.com/ns/organization.organization_membership.member	-2.611214	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.siswimsuitmodels.si_swimsuit_appearance.shooting_locations.inverse	http://rdf.freebase.com/ns/base.siswimsuitmodels.si_swimsuit_appearance.shooting_locations	-0.424343	4	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_command.military_combatant.inverse	http://rdf.freebase.com/ns/military.military_command.military_combatant	-2.1534214	20	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.imports_and_exports.exported_to.inverse	http://rdf.freebase.com/ns/location.imports_and_exports.exported_to	-0.64844656	19	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.gdp_growth_rate	http://rdf.freebase.com/ns/location.statistical_region.gdp_growth_rate.inverse	-2.2474325	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.gdp_real	http://rdf.freebase.com/ns/location.statistical_region.gdp_real.inverse	-1.4362097	28	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials	http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials.inverse	-2.558472	40	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.athletics.athletics_championships_competition_athlete_relationship.country.inverse	http://rdf.freebase.com/ns/base.athletics.athletics_country.championships_athletes_performances.inverse	-1.0401826	7	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_combatant.military_commanders	http://rdf.freebase.com/ns/military.military_combatant.military_commanders.inverse	-3.1697557	22	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_combatant_group.combatants.inverse	http://rdf.freebase.com/ns/military.military_combatant.military_conflicts.inverse	-4.2720237	12	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_combatant.military_conflicts	http://rdf.freebase.com/ns/military.military_combatant.military_conflicts.inverse	-4.390898	12	Spain
+m.06nm1	1.78934397996167	http://rdf.freebase.com/ns/language.human_language.main_country.1	http://rdf.freebase.com/ns/language.human_language.main_country.2	2.2178087	21	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/organization.organization_member.member_of	http://rdf.freebase.com/ns/organization.organization_member.member_of.inverse	-2.931716	32	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/sports.sports_league_draft_pick.school.inverse	http://rdf.freebase.com/ns/sports.sports_league_draft_pick.school	-3.7207608	3	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.popstra.arrest.location.inverse	http://rdf.freebase.com/ns/base.popstra.arrest.location	-1.0264792	6	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/sports.competitor_country_relationship.country.inverse	http://rdf.freebase.com/ns/sports.sport_country.athletes.inverse	-1.3872447	14	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/people.place_lived.location.inverse	http://rdf.freebase.com/ns/people.place_lived.location	-2.5552225	62	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/symbols.flag_use.flag_user.inverse	http://rdf.freebase.com/ns/symbols.flag_use.flag_user	-2.0142312	33	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.skud.legal.treaty_signatory.treaties_signed	http://rdf.freebase.com/ns/user.skud.legal.treaty_signatory.treaties_signed.inverse	-1.173332	5	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/common.topic.article	http://rdf.freebase.com/ns/common.topic.article.inverse	-3.1840858	122	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.robert.earthquakes.earthquake_epicenter.earthquakes_centered_here	http://rdf.freebase.com/ns/user.robert.earthquakes.earthquake_epicenter.earthquakes_centered_here.inverse	-3.4771075	3	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.location.geolocation	http://rdf.freebase.com/ns/location.location.geolocation.inverse	-3.8100657	73	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office.inverse	http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office	-2.4659772	40	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_combatant.military_commanders	http://rdf.freebase.com/ns/military.military_command.military_combatant	-2.5965056	22	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.high_tech_as_percent_of_manufactured_exports	http://rdf.freebase.com/ns/location.statistical_region.high_tech_as_percent_of_manufactured_exports.inverse	-2.1434145	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/sports.competitor_competition_relationship.country.inverse	http://rdf.freebase.com/ns/sports.sport_country.athletic_performances.inverse	-1.516984	19	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.unemployment_rate	http://rdf.freebase.com/ns/location.statistical_region.unemployment_rate.inverse	-2.189796	26	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.population	http://rdf.freebase.com/ns/location.statistical_region.population.inverse	-2.1311393	60	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.athletics.athletics_championships_competition_athlete_relationship.country.inverse	http://rdf.freebase.com/ns/base.athletics.athletics_championships_competition_athlete_relationship.country	-3.1270812	7	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/organization.organization_membership.member.inverse	http://rdf.freebase.com/ns/organization.organization_member.member_of.inverse	-1.8152175	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_combatant.casualties	http://rdf.freebase.com/ns/military.military_combatant.casualties.inverse	-1.0830401	9	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.renewable_freshwater_per_capita	http://rdf.freebase.com/ns/location.statistical_region.renewable_freshwater_per_capita.inverse	-1.8172586	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.country.national_anthem	http://rdf.freebase.com/ns/government.national_anthem_of_a_country.country	-1.6165802	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/olympics.olympic_participating_country.athletes	http://rdf.freebase.com/ns/olympics.olympic_participating_country.athletes.inverse	-1.7763538	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.ungzd.default_domain.eurovision_vote.vote_goes_to.inverse	http://rdf.freebase.com/ns/user.ungzd.default_domain.eurovision_vote.vote_goes_to	-0.5580753	9	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.robert.earthquakes.earthquake_epicenter.earthquakes_centered_here	http://rdf.freebase.com/ns/user.robert.earthquakes.earthquake_nearest_location.location	-5.81222	3	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.life_expectancy	http://rdf.freebase.com/ns/location.statistical_region.life_expectancy.inverse	-2.1468892	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/dataworld.gardening_hint.replaced_by.inverse	http://rdf.freebase.com/ns/dataworld.gardening_hint.replaced_by	-3.1170087	48	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.ontologies.ontology_instance.equivalent_instances	http://rdf.freebase.com/ns/base.ontologies.ontology_instance.equivalent_instances.inverse	-3.1120968	56	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.tsegaran.random.taxonomy_subject.entry	http://rdf.freebase.com/ns/user.tsegaran.random.taxonomy_entry.subject	-2.2641764	55	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/book.place_of_publication_period.place_of_publication.inverse	http://rdf.freebase.com/ns/book.place_of_publication_period.place_of_publication	-2.3644776	16	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.brain_drain_percent	http://rdf.freebase.com/ns/location.statistical_region.brain_drain_percent.inverse	-2.63876	28	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.cellphone_subsriptions_relative	http://rdf.freebase.com/ns/location.statistical_region.cellphone_subsriptions_relative.inverse	-1.5018325	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.energy_use_per_capita	http://rdf.freebase.com/ns/location.statistical_region.energy_use_per_capita.inverse	-2.034859	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_combatant.casualties	http://rdf.freebase.com/ns/military.casualties.combatant	-0.9007758	9	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/film.film_cut.film_release_region.inverse	http://rdf.freebase.com/ns/film.film_cut.film_release_region	-2.8002625	32	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/sports.sport_country.athletes	http://rdf.freebase.com/ns/sports.sport_country.athletes.inverse	-2.223751	16	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/sports.competitor_competition_relationship.country.inverse	http://rdf.freebase.com/ns/sports.competitor_competition_relationship.country	-2.5013413	19	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/olympics.olympic_medal_honor.country.inverse	http://rdf.freebase.com/ns/olympics.olympic_participating_country.medals_won.inverse	-1.7368104	27	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.popstra.vacation_choice.location.inverse	http://rdf.freebase.com/ns/base.popstra.location.vacationers.inverse	-2.4189215	23	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.skud.legal.treaty_signature.signatory.inverse	http://rdf.freebase.com/ns/user.skud.legal.treaty_signatory.treaties_signed.inverse	-2.8308182	5	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_combatant.force_deployments	http://rdf.freebase.com/ns/military.force_strength.combatant	-1.7818427	10	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/symbols.flag_use.flag_user.inverse	http://rdf.freebase.com/ns/symbols.flag_referent.flag.inverse	-1.8846185	33	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.places_imported_from	http://rdf.freebase.com/ns/location.statistical_region.places_imported_from.inverse	-1.6499214	21	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/royalty.system_title_relationship.system.inverse	http://rdf.freebase.com/ns/royalty.system_of_nobility.titles.inverse	-4.9551673	3	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.imports_and_exports.imported_from.inverse	http://rdf.freebase.com/ns/location.statistical_region.places_exported_to.inverse	-2.2165508	18	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.military_combatant_group.combatants.inverse	http://rdf.freebase.com/ns/military.military_combatant_group.combatants	-4.0477443	12	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.gdp_nominal	http://rdf.freebase.com/ns/location.statistical_region.gdp_nominal.inverse	-1.7657714	33	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.gross_savings_as_percent_of_gdp	http://rdf.freebase.com/ns/location.statistical_region.gross_savings_as_percent_of_gdp.inverse	-1.670923	27	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/dataworld.gardening_hint.last_referenced_by.inverse	http://rdf.freebase.com/ns/dataworld.gardening_hint.last_referenced_by	-3.3002267	110	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.postal_code.country.inverse	http://rdf.freebase.com/ns/location.postal_code.country	-1.5225658	34	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/royalty.system_title_relationship.system.inverse	http://rdf.freebase.com/ns/royalty.system_title_relationship.system	-3.6709027	3	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.skud.boats.naval_combatant.naval_engagements	http://rdf.freebase.com/ns/user.skud.boats.naval_combatant.naval_engagements.inverse	-1.5388775	6	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/sports.competitor_country_relationship.country.inverse	http://rdf.freebase.com/ns/sports.competitor_country_relationship.country	-1.9731293	14	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/olympics.olympic_athlete_affiliation.country.inverse	http://rdf.freebase.com/ns/olympics.olympic_participating_country.athletes.inverse	-0.8204709	27	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/symbols.flag_referent.flag	http://rdf.freebase.com/ns/symbols.flag_use.flag_user	-2.1895492	35	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.country.national_anthem	http://rdf.freebase.com/ns/location.country.national_anthem.inverse	-1.8854666	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.trade_balance_as_percent_of_gdp	http://rdf.freebase.com/ns/location.statistical_region.trade_balance_as_percent_of_gdp.inverse	-1.2097617	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.net_migration	http://rdf.freebase.com/ns/location.statistical_region.net_migration.inverse	-1.4902925	30	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.merchandise_trade_percent_of_gdp	http://rdf.freebase.com/ns/location.statistical_region.merchandise_trade_percent_of_gdp.inverse	-2.8962085	28	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.literacy_rate	http://rdf.freebase.com/ns/location.statistical_region.literacy_rate.inverse	-2.0404105	15	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.tsegaran.random.taxonomy_entry.subject.inverse	http://rdf.freebase.com/ns/user.tsegaran.random.taxonomy_subject.entry.inverse	-2.4433568	53	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.popstra.location.arrestee	http://rdf.freebase.com/ns/base.popstra.arrest.location	-1.0621268	6	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/people.person.nationality.inverse	http://rdf.freebase.com/ns/people.person.nationality	-0.9263735	18	Ecuador | Estonia | Belarus | Bulgaria | Portugal | Peru | Nigeria | United Kingdom | South Africa | Soviet Union | [ and 63 more. ]
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.cpi_inflation_rate	http://rdf.freebase.com/ns/location.statistical_region.cpi_inflation_rate.inverse	-2.7268207	28	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/freebase.flag_judgment.item.inverse	http://rdf.freebase.com/ns/freebase.flag_judgment.item	-3.3853784	28	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.robert.earthquakes.earthquake_nearest_location.location.inverse	http://rdf.freebase.com/ns/user.robert.earthquakes.earthquake_epicenter.earthquakes_centered_here.inverse	-5.1922984	3	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.force_strength.combatant.inverse	http://rdf.freebase.com/ns/military.force_strength.combatant	-2.2511313	10	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.places_imported_from	http://rdf.freebase.com/ns/location.imports_and_exports.exported_to	-2.340105	21	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/olympics.olympic_participating_country.athletes	http://rdf.freebase.com/ns/olympics.olympic_athlete_affiliation.country	-2.105913	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/royalty.system_of_nobility.titles	http://rdf.freebase.com/ns/royalty.system_of_nobility.titles.inverse	-4.1644754	3	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.foreign_direct_investment_net_inflows	http://rdf.freebase.com/ns/location.statistical_region.foreign_direct_investment_net_inflows.inverse	-2.4392066	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.athletics.athletics_country.championships_athletes_performances	http://rdf.freebase.com/ns/base.athletics.athletics_country.championships_athletes_performances.inverse	-0.96390355	9	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.tsegaran.random.taxonomy_entry.subject.inverse	http://rdf.freebase.com/ns/user.tsegaran.random.taxonomy_entry.subject	-2.291023	53	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/user.ungzd.default_domain.eurovision_vote.voting_country.inverse	http://rdf.freebase.com/ns/user.ungzd.default_domain.eurovision_vote.voting_country	-1.4888222	16	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.imports_and_exports.imported_from.inverse	http://rdf.freebase.com/ns/location.imports_and_exports.imported_from	-1.2498074	18	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.minimum_wage	http://rdf.freebase.com/ns/location.statistical_region.minimum_wage.inverse	-2.6718864	13	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.military_expenditure_percent_gdp	http://rdf.freebase.com/ns/location.statistical_region.military_expenditure_percent_gdp.inverse	-2.327051	28	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.size_of_armed_forces	http://rdf.freebase.com/ns/location.statistical_region.size_of_armed_forces.inverse	-2.776116	29	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/base.popstra.location.vacationers	http://rdf.freebase.com/ns/base.popstra.location.vacationers.inverse	-2.243909	23	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/government.national_anthem_of_a_country.country.inverse	http://rdf.freebase.com/ns/location.country.national_anthem.inverse	-2.3431692	28	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/military.force_strength.combatant.inverse	http://rdf.freebase.com/ns/military.military_combatant.force_deployments.inverse	-1.2458757	10	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.gni_per_capita_in_ppp_dollars	http://rdf.freebase.com/ns/location.statistical_region.gni_per_capita_in_ppp_dollars.inverse	-1.8455145	27	Spain
+m.06mkj	32.5100700840267	http://rdf.freebase.com/ns/location.statistical_region.fertility_rate	http://rdf.freebase.com/ns/location.statistical_region.fertility_rate.inverse	-1.9466095	30	Spain
+
+Gold entities:
+Spain
+
+Error type: 
+wrong entity
+
+
+Question 19:
+Where did Kim Kardashian come from ?
+
+Predictions:
+m.0261x8t	38490.8413365986	http://rdf.freebase.com/ns/people.person.nationality.1	http://rdf.freebase.com/ns/people.person.nationality.2	1.1263722	69	United States of America
+
+True hyperpaths:
+m.0261x8t	38490.8413365986	http://rdf.freebase.com/ns/location.location.people_born_here.2	http://rdf.freebase.com/ns/location.location.people_born_here.1	-1.4310918	105	Los Angeles
+m.0261x8t	38490.8413365986	http://rdf.freebase.com/ns/people.person.place_of_birth.1	http://rdf.freebase.com/ns/people.person.place_of_birth.2	-2.22466	105	Los Angeles
+
+Gold entities:
+Los Angeles
+
+Error type: 
+ambiguous question
+
+
+Question 20:
+When is St Joseph birthday ?
+
+Predictions:
+m.0c08y	1521.77071171327	http://rdf.freebase.com/ns/location.location.people_born_here.2	http://rdf.freebase.com/ns/location.location.people_born_here.1	0.8313569	105	Nazareth
+
+True hyperpaths:
+
+Gold entities:
+March 19
+
+Error type: 
+no gold
+
+
+Question 21:
+What team is Hank Baskett on 2010 ?
+
+Predictions:
+m.0d81yf	33452.0956136048	http://rdf.freebase.com/ns/sports.sports_team_roster.player.inverse	http://rdf.freebase.com/ns/american_football.football_historical_roster_position.team	1.2819238	14	Indianapolis Colts | Philadelphia Eagles | Minnesota Vikings
+
+True hyperpaths:
+m.0d81yf	33452.0956136048	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.player.nfl_team.1	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.player.nfl_team.2	0.29231092	7	Philadelphia Eagles
+
+Gold entities:
+Philadelphia Eagles
+
+Error type: 
+multi entity
+
+
+Question 22:
+Which state did Anne Hutchinson found ?
+
+Predictions:
+m.01v5g9	23356.4443144918	http://rdf.freebase.com/ns/people.person.children.1	http://rdf.freebase.com/ns/people.person.children.2	0.4070683	21	Susanna Cole | Thomas Savage | Edward Hutchinson | John Sanford
+
+True hyperpaths:
+m.01v5g9	23356.4443144918	http://rdf.freebase.com/ns/people.person.places_lived	http://rdf.freebase.com/ns/people.place_lived.location	-7.464132	65	The Bronx | Rhode Island | Massachusetts
+m.01v5g9	23356.4443144918	http://rdf.freebase.com/ns/people.place_lived.person.inverse	http://rdf.freebase.com/ns/people.place_lived.location	-7.6865563	65	The Bronx | Rhode Island | Massachusetts
+
+Gold entities:
+Rhode Island
+
+Error type: 
+wrong relation (less frequent) (different type)
+
+
+Question 23:
+What team is Raul Ibanez on ?
+
+Predictions:
+m.06xvwt	30375.8999241402	http://rdf.freebase.com/ns/baseball.baseball_player.batting_stats	http://rdf.freebase.com/ns/baseball.batting_statistics.team	1.8590258	6	Seattle Mariners | Kansas City Royals
+
+True hyperpaths:
+
+Gold entities:
+Seattle Mariners
+
+Error type: 
+no gold
+
+
+Question 24:
+What did Isaac Newton explain ?
+
+Predictions:
+m.03s9v	36490.8984523327	http://rdf.freebase.com/ns/base.argumentmaps.innovator.original_ideas.1	http://rdf.freebase.com/ns/base.argumentmaps.innovator.original_ideas.2	1.485888	7	Newton's law of universal gravitation
+
+True hyperpaths:
+m.03s9v	36490.8984523327	http://rdf.freebase.com/ns/symbols.name_source.namesakes.1	http://rdf.freebase.com/ns/symbols.name_source.namesakes.2	-0.8888631	11	Newtonian telescope | Newton fractal | Newton's laws of motion | 8000 Isaac Newton | Newton | Newton's cradle | Newton disc | Newton–Euler equations | Newton–Cotes formulas | Newton polynomial | [ and 7 more. ]
+m.03s9v	36490.8984523327	http://rdf.freebase.com/ns/symbols.namesake.named_after.2	http://rdf.freebase.com/ns/symbols.namesake.named_after.1	-0.8080292	11	Newtonian telescope | Newton fractal | Newton's laws of motion | 8000 Isaac Newton | Newton | Newton's cradle | Newton disc | Newton–Euler equations | Newton–Cotes formulas | Newton polynomial | [ and 7 more. ]
+
+Gold entities:
+Newton fractal	Newton–Euler equations	Newton's laws of motion	Newton's cannonball	Newton	Newton's inequalities	Newton's notation	Newton polygon	Newton disc
+
+Error type: 
+gold relation wrong
+
+
+Question 25:
+What year was first World Series ?
+
+Predictions:
+m.0fjp3	60568.1757214949	http://rdf.freebase.com/ns/book.book_subject.works.1	http://rdf.freebase.com/ns/book.book_subject.works.2	-3.4212508	25	The Gashouse Gang: How Dizzy Dean, Leo Durocher, Branch Rickey, Pepper Martin, and Their Colorful, Come-from-Behind Ball Club Won the World Series - and America's Heart - During the Great Depression
+
+True hyperpaths:
+m.0fjp3	60568.1757214949	http://rdf.freebase.com/ns/time.recurring_event.instances.1	http://rdf.freebase.com/ns/time.recurring_event.instances.2	-6.319384	2	1990 World Series | 1903 World Series | 1955 World Series | 1906 World Series | 1983 World Series | 1960 World Series | 1944 World Series | 1979 World Series | 1918 World Series | 1956 World Series | [ and 96 more. ]
+m.0fjp3	60568.1757214949	http://rdf.freebase.com/ns/time.event.instance_of_recurring_event.2	http://rdf.freebase.com/ns/time.event.instance_of_recurring_event.1	-5.151342	2	1990 World Series | 1903 World Series | 1955 World Series | 1906 World Series | 1983 World Series | 1960 World Series | 1944 World Series | 1979 World Series | 1918 World Series | 1956 World Series | [ and 96 more. ]
+
+Gold entities:
+1903 World Series
+
+Error type: 
+comparative|wrong relation (more frequent) (different type)
+
+
+Question 26:
+Who was Selena Gomez in Barney and friends ?
+
+Predictions:
+m.0gs6vr	37897.0241167364	http://rdf.freebase.com/ns/music.artist.origin.1	http://rdf.freebase.com/ns/music.artist.origin.2	0.99829245	19	Grand Prairie
+
+True hyperpaths:
+m.0gs6vr	37897.0241167364	http://rdf.freebase.com/ns/tv.tv_actor.starring_roles	http://rdf.freebase.com/ns/tv.tv_character.appeared_in_tv_program.inverse	-10.089205	9	Gianna | Alex Russo
+m.0gs6vr	37897.0241167364	http://rdf.freebase.com/ns/tv.tv_actor.starring_roles	http://rdf.freebase.com/ns/tv.regular_tv_appearance.character	-10.431446	9	Gianna | Alex Russo
+m.0gs6vr	37897.0241167364	http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor.inverse	http://rdf.freebase.com/ns/tv.tv_character.appeared_in_tv_program.inverse	-10.065632	9	Gianna | Alex Russo
+m.0gs6vr	37897.0241167364	http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor.inverse	http://rdf.freebase.com/ns/tv.regular_tv_appearance.character	-10.32642	9	Gianna | Alex Russo
+
+Gold entities:
+Gianna
+
+Error type: 
+multi entity|wrong relation (more frequent) (different type)
+
+
+Question 27:
+What are the most popular religions in Israel ?
+
+Predictions:
+m.03spz	28413.1840764234	http://rdf.freebase.com/ns/location.location.containedby.1	http://rdf.freebase.com/ns/location.location.containedby.2	0.74088174	115	Eurasia | Middle East | Asia | Palestine
+
+True hyperpaths:
+m.0jt0lm_	1.48548689040329	http://rdf.freebase.com/ns/religion.religion.notable_figures.2	http://rdf.freebase.com/ns/religion.religion.notable_figures.1	-6.210753	2	Judaism
+m.03spz	28413.1840764234	http://rdf.freebase.com/ns/location.statistical_region.religions	http://rdf.freebase.com/ns/location.religion_percentage.religion	-0.98981667	19	Judaism
+
+Gold entities:
+Judaism
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 28:
+Where does the city of Paris get its name ?
+
+Predictions:
+m.05qtj	21517.715807146	http://rdf.freebase.com/ns/location.capital_of_administrative_division.capital_of	http://rdf.freebase.com/ns/location.administrative_division_capital_relationship.capital	1.3717268	11	Paris
+
+True hyperpaths:
+m.05qtj	21517.715807146	http://rdf.freebase.com/ns/symbols.name_source.namesakes.2	http://rdf.freebase.com/ns/symbols.name_source.namesakes.1	-3.325848	7	Parisii
+m.05qtj	21517.715807146	http://rdf.freebase.com/ns/symbols.namesake.named_after.1	http://rdf.freebase.com/ns/symbols.namesake.named_after.2	-3.4428248	7	Parisii
+
+Gold entities:
+Parisii
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 29:
+What did George Washington Carver made ?
+
+Predictions:
+m.03djm	152260.660569602	http://rdf.freebase.com/ns/people.deceased_person.place_of_death.1	http://rdf.freebase.com/ns/people.deceased_person.place_of_death.2	1.4075735	58	Tuskegee
+
+True hyperpaths:
+m.03djm	152260.660569602	http://rdf.freebase.com/ns/law.inventor.inventions.1	http://rdf.freebase.com/ns/law.inventor.inventions.2	0.29530528	23	Peanut butter
+m.03djm	152260.660569602	http://rdf.freebase.com/ns/law.invention.inventor.2	http://rdf.freebase.com/ns/law.invention.inventor.1	0.6109509	23	Peanut butter
+
+Gold entities:
+Peanut butter
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 30:
+What team did Jackie Robinson ?
+
+Predictions:
+m.0443c	54395.8196696433	http://rdf.freebase.com/ns/baseball.baseball_player.batting_stats	http://rdf.freebase.com/ns/baseball.batting_statistics.team	1.7248544	6	Brooklyn Dodgers
+
+True hyperpaths:
+m.0443c	54395.8196696433	http://rdf.freebase.com/ns/sports.pro_athlete.teams	http://rdf.freebase.com/ns/sports.sports_team.roster.inverse	0.9667592	49	Brooklyn Dodgers | Kansas City Monarchs | Los Angeles Bulldogs | Montreal Royals | UCLA Bruins football
+m.0443c	54395.8196696433	http://rdf.freebase.com/ns/sports.pro_athlete.teams	http://rdf.freebase.com/ns/sports.sports_team_roster.team	1.0001873	49	Brooklyn Dodgers | Kansas City Monarchs | Los Angeles Bulldogs | Montreal Royals | UCLA Bruins football
+m.0443c	54395.8196696433	http://rdf.freebase.com/ns/sports.sports_team_roster.player.inverse	http://rdf.freebase.com/ns/sports.sports_team.roster.inverse	1.0385556	49	Brooklyn Dodgers | Kansas City Monarchs | Los Angeles Bulldogs | Montreal Royals | UCLA Bruins football
+m.0443c	54395.8196696433	http://rdf.freebase.com/ns/sports.sports_team_roster.player.inverse	http://rdf.freebase.com/ns/sports.sports_team_roster.team	0.9461566	49	Brooklyn Dodgers | Kansas City Monarchs | Los Angeles Bulldogs | Montreal Royals | UCLA Bruins football
+
+Gold entities:
+Montreal Royals	Kansas City Monarchs	Los Angeles Bulldogs	Brooklyn Dodgers	UCLA Bruins football
+
+Error type: 
+wrong relation (less frequent) (similar type)
+
+
+Question 31:
+Who was the leader of Soviet Union during WWII ?
+
+Predictions:
+m.05vz3zq	14127.7100095367	http://rdf.freebase.com/ns/symbols.flag_referent.flag	http://rdf.freebase.com/ns/symbols.flag_use.flag	1.8798518	6	Flag of the Soviet Union
+
+True hyperpaths:
+m.05vz3zq	14127.7100095367	http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office.inverse	http://rdf.freebase.com/ns/government.politician.government_positions_held.inverse	-1.6976509	47	Joseph Stalin | Vagit Alekperov | Mikhail Gorbachev | Leonid Brezhnev | Georgy Malenkov | Vladimir Ivashko | Vladimir Lenin | Yuri Andropov | Konstantin Chernenko | Vyacheslav Molotov | [ and 1 more. ]
+m.05vz3zq	14127.7100095367	http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office.inverse	http://rdf.freebase.com/ns/government.government_position_held.office_holder	-1.3998628	47	Joseph Stalin | Vagit Alekperov | Mikhail Gorbachev | Leonid Brezhnev | Georgy Malenkov | Vladimir Ivashko | Vladimir Lenin | Yuri Andropov | Konstantin Chernenko | Vyacheslav Molotov | [ and 1 more. ]
+m.05vz3zq	14127.7100095367	http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials	http://rdf.freebase.com/ns/government.government_position_held.office_holder	-2.6723394	47	Joseph Stalin | Vagit Alekperov | Mikhail Gorbachev | Leonid Brezhnev | Georgy Malenkov | Vladimir Ivashko | Vladimir Lenin | Yuri Andropov | Konstantin Chernenko | Vyacheslav Molotov | [ and 1 more. ]
+m.05vz3zq	14127.7100095367	http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials	http://rdf.freebase.com/ns/government.politician.government_positions_held.inverse	-1.5317061	47	Joseph Stalin | Vagit Alekperov | Mikhail Gorbachev | Leonid Brezhnev | Georgy Malenkov | Vladimir Ivashko | Vladimir Lenin | Yuri Andropov | Konstantin Chernenko | Vyacheslav Molotov | [ and 1 more. ]
+
+Gold entities:
+Joseph Stalin
+
+Error type: 
+complex reasoning|wrong relation (less frequent) (different type)
+
+
+Question 32:
+What victory was Andrew Jackson most famous for ?
+
+Predictions:
+m.0rlz	34252.8450843014	http://rdf.freebase.com/ns/medicine.disease.notable_people_with_this_condition.2	http://rdf.freebase.com/ns/medicine.disease.notable_people_with_this_condition.1	0.42403984	13	Major depression | Smallpox
+
+True hyperpaths:
+m.0rlz	34252.8450843014	http://rdf.freebase.com/ns/military.military_commander.military_commands	http://rdf.freebase.com/ns/military.military_command.military_conflict	-1.4672818	6	War of 1812 | Napoleonic Wars | Battle of Horseshoe Bend | Battle of Talladega | Battles of Emuckfaw and Enotachopo Creek | Creek War | Second Seminole War | Battle of New Orleans | Battle of Pensacola
+m.0rlz	34252.8450843014	http://rdf.freebase.com/ns/military.military_command.military_commander.inverse	http://rdf.freebase.com/ns/military.military_command.military_conflict	-0.8373592	6	War of 1812 | Napoleonic Wars | Battle of Horseshoe Bend | Battle of Talladega | Battles of Emuckfaw and Enotachopo Creek | Creek War | Second Seminole War | Battle of New Orleans | Battle of Pensacola
+m.0rlz	34252.8450843014	http://rdf.freebase.com/ns/military.military_commander.military_commands	http://rdf.freebase.com/ns/military.military_conflict.commanders.inverse	-1.0270239	6	War of 1812 | Napoleonic Wars | Battle of Horseshoe Bend | Battle of Talladega | Battles of Emuckfaw and Enotachopo Creek | Creek War | Second Seminole War | Battle of New Orleans | Battle of Pensacola
+m.0rlz	34252.8450843014	http://rdf.freebase.com/ns/military.military_command.military_commander.inverse	http://rdf.freebase.com/ns/military.military_conflict.commanders.inverse	-1.1916107	6	War of 1812 | Napoleonic Wars | Battle of Horseshoe Bend | Battle of Talladega | Battles of Emuckfaw and Enotachopo Creek | Creek War | Second Seminole War | Battle of New Orleans | Battle of Pensacola
+
+Gold entities:
+Battle of Horseshoe Bend	Second Seminole War	Battle of Talladega	War of 1812	Battles of Emuckfaw and Enotachopo Creek	Battle of New Orleans	Napoleonic Wars	Creek War	Battle of Pensacola
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 33:
+What is the largest nation in Europe ?
+
+Predictions:
+m.02j9z	16361.6202924226	http://rdf.freebase.com/ns/base.locations.countries.continent.2	http://rdf.freebase.com/ns/base.locations.countries.continent.1	2.3717027	8	Estonia | Belarus | Bulgaria | Georgia | Portugal | Kosovo | Monaco | Lithuania | Albania | United Kingdom | [ and 36 more. ]
+
+True hyperpaths:
+m.02j9z	16361.6202924226	http://rdf.freebase.com/ns/location.location.partially_contains.1	http://rdf.freebase.com/ns/location.location.partially_contains.2	-1.1517562	7	Georgia | Black Sea | Kingdom of the Netherlands | Kazakhstan | Kingdom of Denmark | Russian Empire | Russia | Turkey | Armenia | Soviet Union | [ and 1 more. ]
+m.02j9z	16361.6202924226	http://rdf.freebase.com/ns/location.location.partially_containedby.2	http://rdf.freebase.com/ns/location.location.partially_containedby.1	-1.7075639	5	Georgia | Black Sea | Kingdom of the Netherlands | Kazakhstan | Kingdom of Denmark | Russian Empire | Russia | Turkey | Armenia | Soviet Union | [ and 1 more. ]
+
+Gold entities:
+Russia
+
+Error type: 
+comparative
+
+
+Question 34:
+Where was the Boston Tea Party 1773 ?
+
+Predictions:
+m.016dxh	3.45156780676818	http://rdf.freebase.com/ns/music.group_membership.group.inverse	http://rdf.freebase.com/ns/music.group_membership.role	0.8091774	1	Percussion | Bass guitar | Vocals | Lead vocalist | Guitar | Lead guitar | Drums | Keyboard | Backing Vocals | harmonica
+
+True hyperpaths:
+m.01cx_	458.340614986831	http://rdf.freebase.com/ns/location.location.contains_major_portion_of.1	http://rdf.freebase.com/ns/location.location.contains_major_portion_of.2	-12.671005	1	Boston-Quincy, MA Metropolitan Division | Greater Boston | Boston Harbor | Boston-Cambridge-Quincy, MA-NH Metropolitan Statistical Area
+m.01cx_	458.340614986831	http://rdf.freebase.com/ns/location.location.primarily_containedby.2	http://rdf.freebase.com/ns/location.location.primarily_containedby.1	-11.712896	1	Boston-Quincy, MA Metropolitan Division | Greater Boston | Boston Harbor | Boston-Cambridge-Quincy, MA-NH Metropolitan Statistical Area
+
+Gold entities:
+Boston Harbor
+
+Error type: 
+wrong entity
+
+
+Question 35:
+Who were Jesus siblings ?
+
+Predictions:
+m.03lh3v	1.0151834266081	http://rdf.freebase.com/ns/people.person.parents.2	http://rdf.freebase.com/ns/people.person.parents.1	-0.15471011	21	Walker Allen | Wynn Allen | Tierra Allen | Walter Ray Allen III | Wynstan Ryan Allen
+
+True hyperpaths:
+
+Gold entities:
+Jude the Apostle	James the Just	Simon (brother of Jesus)	Joses
+
+Error type: 
+no gold
+
+
+Question 36:
+What year did President William Henry Harrison take office ?
+
+Predictions:
+m.0835q	65392.7163560435	http://rdf.freebase.com/ns/government.politician.government_positions_held	http://rdf.freebase.com/ns/government.government_office_or_title.office_holders.inverse	0.5857594	19	United States Senator | President of the United States | United States Representative
+
+True hyperpaths:
+
+Gold entities:
+3/4/1841
+
+Error type: 
+no gold
+
+
+Question 37:
+When was the last time the Red Sox won 100 games ?
+
+Predictions:
+m.01d5z	19161.8388671889	http://rdf.freebase.com/ns/sports.sports_championship_event.champion.2	http://rdf.freebase.com/ns/sports.sports_championship_event.champion.1	2.2899222	59	1912 World Series | 1918 World Series | 1903 World Series | 2004 World Series | 1915 World Series | 2007 World Series | 1916 World Series
+
+True hyperpaths:
+m.01d5z	19161.8388671889	http://rdf.freebase.com/ns/baseball.baseball_team_stats.team.inverse	http://rdf.freebase.com/ns/baseball.baseball_team_stats.season	-15.590679	1	1940 Major League Baseball Season | 1961 Major League Baseball Season | 1981 Major League Baseball Season | 1953 Major League Baseball Season | 1973 Major League Baseball Season | 1963 Major League Baseball Season | 1921 Major League Baseball Season | 2007 Major League Baseball season | 2001 Major League Baseball Season | 1971 Major League Baseball Season | [ and 98 more. ]
+m.01d5z	19161.8388671889	http://rdf.freebase.com/ns/baseball.baseball_team.team_stats	http://rdf.freebase.com/ns/baseball.baseball_team_stats.season	-13.672791	1	1940 Major League Baseball Season | 1961 Major League Baseball Season | 1981 Major League Baseball Season | 1953 Major League Baseball Season | 1973 Major League Baseball Season | 1963 Major League Baseball Season | 1921 Major League Baseball Season | 2007 Major League Baseball season | 2001 Major League Baseball Season | 1971 Major League Baseball Season | [ and 98 more. ]
+m.01d5z	19161.8388671889	http://rdf.freebase.com/ns/baseball.batting_statistics.team.inverse	http://rdf.freebase.com/ns/baseball.batting_statistics.season	-12.993071	1	1940 Major League Baseball Season | 1981 Major League Baseball Season | 1961 Major League Baseball Season | 1953 Major League Baseball Season | 1973 Major League Baseball Season | 1963 Major League Baseball Season | 2007 Major League Baseball season | 1921 Major League Baseball Season | 2001 Major League Baseball Season | 1971 Major League Baseball Season | [ and 98 more. ]
+
+Gold entities:
+1912 Major League Baseball Season
+
+Error type: 
+complex reasoning
+
+
+Question 38:
+Who was the leader of the US during WWII ?
+
+Predictions:
+m.09c7w0	3.9247328069451	http://rdf.freebase.com/ns/base.litcentral.focal_location.priority_species	http://rdf.freebase.com/ns/base.conservationaction.documented_priority_species.location	0.44320402	8	United States of America
+
+True hyperpaths:
+
+Gold entities:
+Gerald Ford
+
+Error type: 
+no gold
+
+
+Question 39:
+Who plays Simon Birch ?
+
+Predictions:
+m.070m8v	9110.3563307382	http://rdf.freebase.com/ns/film.film.starring	http://rdf.freebase.com/ns/film.actor.film.inverse	1.0904185	6	Sam Aaron | Wendy Fleming | Sean McCann | Ian Michael Smith | Devon Alan | Sean Sullivan | Barbara Stewart | Scotty Leavenworth | Aaron Bouffard | Taylor Emerson | [ and 52 more. ]
+
+True hyperpaths:
+m.070m8v	9110.3563307382	http://rdf.freebase.com/ns/award.award_nominated_work.award_nominations	http://rdf.freebase.com/ns/award.award_nominee.award_nominations.inverse	0.5344803	4	Ian Michael Smith
+m.070m8v	9110.3563307382	http://rdf.freebase.com/ns/award.award_honor.honored_for.inverse	http://rdf.freebase.com/ns/award.award_winner.awards_won.inverse	-7.565041	2	Ian Michael Smith
+m.070m8v	9110.3563307382	http://rdf.freebase.com/ns/award.award_winning_work.awards_won	http://rdf.freebase.com/ns/award.award_honor.award_winner	-8.439211	2	Ian Michael Smith
+m.070m8v	9110.3563307382	http://rdf.freebase.com/ns/award.award_nomination.nominated_for.inverse	http://rdf.freebase.com/ns/award.award_nominee.award_nominations.inverse	0.5631237	4	Ian Michael Smith
+m.070m8v	9110.3563307382	http://rdf.freebase.com/ns/award.award_winning_work.awards_won	http://rdf.freebase.com/ns/award.award_winner.awards_won.inverse	-9.105114	2	Ian Michael Smith
+m.070m8v	9110.3563307382	http://rdf.freebase.com/ns/award.award_honor.honored_for.inverse	http://rdf.freebase.com/ns/award.award_honor.award_winner	-8.122515	2	Ian Michael Smith
+m.070m8v	9110.3563307382	http://rdf.freebase.com/ns/award.award_nominated_work.award_nominations	http://rdf.freebase.com/ns/award.award_nomination.award_nominee	0.30604142	4	Ian Michael Smith
+m.070m8v	9110.3563307382	http://rdf.freebase.com/ns/award.award_nomination.nominated_for.inverse	http://rdf.freebase.com/ns/award.award_nomination.award_nominee	0.7819613	4	Ian Michael Smith
+
+Gold entities:
+Ian Michael Smith
+
+Error type: 
+mentions wrong
+
+
+Question 40:
+What is the name of the national anthem of Canada ( 2 WORDS ) ?
+
+Predictions:
+m.0d060g	2788.87885269026	http://rdf.freebase.com/ns/location.country.capital.1	http://rdf.freebase.com/ns/location.country.capital.2	1.6619725	25	Ottawa
+
+True hyperpaths:
+m.0d060g	2788.87885269026	http://rdf.freebase.com/ns/government.national_anthem_of_a_country.country.inverse	http://rdf.freebase.com/ns/government.national_anthem_of_a_country.anthem	-2.8754125	1	O Canada
+m.0d060g	2788.87885269026	http://rdf.freebase.com/ns/location.country.national_anthem	http://rdf.freebase.com/ns/government.national_anthem_of_a_country.anthem	-2.304142	1	O Canada
+m.05mtn	1.9665522650228	http://rdf.freebase.com/ns/common.topic.article	http://rdf.freebase.com/ns/common.topic.article.inverse	-3.909194	122	O Canada
+m.0d060g	2788.87885269026	http://rdf.freebase.com/ns/government.national_anthem_of_a_country.country.inverse	http://rdf.freebase.com/ns/government.national_anthem.national_anthem_of.inverse	-1.6746488	1	O Canada
+m.0d060g	2788.87885269026	http://rdf.freebase.com/ns/location.country.national_anthem	http://rdf.freebase.com/ns/government.national_anthem.national_anthem_of.inverse	-2.861524	1	O Canada
+
+Gold entities:
+O Canada
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 41:
+When did William McKinley died ?
+
+Predictions:
+m.083p7	27840.3093403378	http://rdf.freebase.com/ns/people.deceased_person.place_of_death.1	http://rdf.freebase.com/ns/people.deceased_person.place_of_death.2	1.5931232	58	Buffalo
+
+True hyperpaths:
+
+Gold entities:
+9/14/1901
+
+Error type: 
+no gold
+
+
+Question 42:
+What position did Vince Lombardi play ?
+
+Predictions:
+m.07_xf	48586.8382110789	http://rdf.freebase.com/ns/american_football.football_coach.coaching_history	http://rdf.freebase.com/ns/american_football.football_team.historical_coaching_staff.inverse	1.6835213	1	Washington Redskins | Green Bay Packers
+
+True hyperpaths:
+m.07_xf	48586.8382110789	http://rdf.freebase.com/ns/american_football.football_player.position_s.1	http://rdf.freebase.com/ns/american_football.football_player.position_s.2	1.134163	2	Right Guard
+m.07_xf	48586.8382110789	http://rdf.freebase.com/ns/american_football.football_position.players.2	http://rdf.freebase.com/ns/american_football.football_position.players.1	1.2326279	2	Right Guard
+
+Gold entities:
+Right Guard
+
+Error type: 
+wrong relation (both infrequent) (different type)
+
+
+Question 43:
+When did the big earthquake hit San Francisco ?
+
+Predictions:
+m.0d6lp	64883.5874563891	http://rdf.freebase.com/ns/base.biblioness.bibs_location.state.1	http://rdf.freebase.com/ns/base.biblioness.bibs_location.state.2	2.233779	6	California
+
+True hyperpaths:
+m.0d6lp	64883.5874563891	http://rdf.freebase.com/ns/event.disaster.areas_affected.2	http://rdf.freebase.com/ns/event.disaster.areas_affected.1	-4.585712	1	1906 San Francisco earthquake | Preparedness Day Bombing | Japan Airlines Flight 2
+
+Gold entities:
+1906 San Francisco earthquake
+
+Error type: 
+gold answer wrong
+
+
+Question 44:
+What movies has John Williams score ?
+
+Predictions:
+m.0146pg	8486.41372787968	http://rdf.freebase.com/ns/music.group_member.instruments_played.1	http://rdf.freebase.com/ns/music.group_member.instruments_played.2	2.196795	10	Trumpet | Clarinet | Piano | Trombone
+
+True hyperpaths:
+m.0146pg	8486.41372787968	http://rdf.freebase.com/ns/award.award_honor.award_winner.inverse	http://rdf.freebase.com/ns/award.award_winning_work.awards_won.inverse	-3.1416178	14	Saving Private Ryan | E.T. The Extra-Terrestrial | Star Wars | Theme From Angela's Ashes | Main Theme (from Star Wars) | Star Wars: The Empire Strikes Back | Raiders of the Lost Ark | Minority Report | Main Theme (from Superman) | The Terminal | [ and 24 more. ]
+m.0146pg	8486.41372787968	http://rdf.freebase.com/ns/award.award_winner.awards_won	http://rdf.freebase.com/ns/award.award_honor.honored_for	-4.438992	14	Saving Private Ryan | E.T. The Extra-Terrestrial | Star Wars | Theme From Angela's Ashes | Main Theme (from Star Wars) | Star Wars: The Empire Strikes Back | Raiders of the Lost Ark | Minority Report | Main Theme (from Superman) | The Terminal | [ and 24 more. ]
+m.0146pg	8486.41372787968	http://rdf.freebase.com/ns/award.award_honor.award_winner.inverse	http://rdf.freebase.com/ns/award.award_honor.honored_for	-3.9111867	14	Saving Private Ryan | E.T. The Extra-Terrestrial | Star Wars | Theme From Angela's Ashes | Main Theme (from Star Wars) | Star Wars: The Empire Strikes Back | Raiders of the Lost Ark | Minority Report | Main Theme (from Superman) | The Terminal | [ and 24 more. ]
+m.0146pg	8486.41372787968	http://rdf.freebase.com/ns/award.award_winner.awards_won	http://rdf.freebase.com/ns/award.award_winning_work.awards_won.inverse	-2.9312146	14	Saving Private Ryan | E.T. The Extra-Terrestrial | Star Wars | Theme From Angela's Ashes | Main Theme (from Star Wars) | Star Wars: The Empire Strikes Back | Raiders of the Lost Ark | Minority Report | Main Theme (from Superman) | The Terminal | [ and 24 more. ]
+
+Gold entities:
+A.I. Artificial Intelligence	Always	Catch Me If You Can	1941	Daddy-O	Amistad	Close Encounters of the Third Kind	E.T. the Extra-Terrestrial	Empire of the Sun	Earthquake
+
+Error type: 
+gold relation wrong
+
+
+Question 45:
+What is the Milwaukee Brewers stadium called ?
+
+Predictions:
+m.051vz	6575.3725041052	http://rdf.freebase.com/ns/sports.sports_team.league	http://rdf.freebase.com/ns/sports.sports_league.teams.inverse	1.0991018	1	National League | Major League Baseball | National League Central | American League
+
+True hyperpaths:
+m.051vz	6575.3725041052	http://rdf.freebase.com/ns/sports.sports_facility.teams.2	http://rdf.freebase.com/ns/sports.sports_facility.teams.1	-0.051232636	19	Miller Park
+m.051vz	6575.3725041052	http://rdf.freebase.com/ns/sports.sports_team.arena_stadium.1	http://rdf.freebase.com/ns/sports.sports_team.arena_stadium.2	0.1799022	19	Miller Park
+
+Gold entities:
+Miller Park
+
+Error type: 
+wrong relation (less frequent) (different type)
+
+
+Question 46:
+What movies have Robert Pattinson in them ?
+
+Predictions:
+m.062dn7	141725.716898121	http://rdf.freebase.com/ns/film.performance.actor.inverse	http://rdf.freebase.com/ns/film.film.starring.inverse	1.7729008	58	Twilight | Water for Elephants | Eclipse | The Rover | Maps to the Stars | Remember Me | The Twilight Saga: Breaking Dawn - Part 2 | How to Be | The Haunted Airman | Queen of the Desert | [ and 14 more. ]
+
+True hyperpaths:
+m.062dn7	141725.716898121	http://rdf.freebase.com/ns/award.award_nominee.award_nominations	http://rdf.freebase.com/ns/award.award_nominated_work.award_nominations.inverse	-0.79799175	15	Twilight | Eclipse | New Moon | The Twilight Saga: Breaking Dawn - Part 1 | Remember Me | The Twilight Saga: Breaking Dawn - Part 2
+m.062dn7	141725.716898121	http://rdf.freebase.com/ns/award.award_nomination.award_nominee.inverse	http://rdf.freebase.com/ns/award.award_nominated_work.award_nominations.inverse	-0.35267317	15	Twilight | Eclipse | New Moon | The Twilight Saga: Breaking Dawn - Part 1 | Remember Me | The Twilight Saga: Breaking Dawn - Part 2
+m.062dn7	141725.716898121	http://rdf.freebase.com/ns/award.award_nominee.award_nominations	http://rdf.freebase.com/ns/award.award_nomination.nominated_for	0.19431055	15	Twilight | Eclipse | New Moon | The Twilight Saga: Breaking Dawn - Part 1 | Remember Me | The Twilight Saga: Breaking Dawn - Part 2
+m.062dn7	141725.716898121	http://rdf.freebase.com/ns/award.award_nomination.award_nominee.inverse	http://rdf.freebase.com/ns/award.award_nomination.nominated_for	-0.47790194	15	Twilight | Eclipse | New Moon | The Twilight Saga: Breaking Dawn - Part 1 | Remember Me | The Twilight Saga: Breaking Dawn - Part 2
+
+Gold entities:
+Eclipse	Dark Kingdom: The Dragon King	New Moon	Remember Me	How to Be	Harry Potter and the Order of the Phoenix	Little Ashes	Bel Ami	Twilight	The Twilight Saga: Breaking Dawn - Part 1
+
+Error type: 
+gold answer incomplete
+
+
+Question 47:
+What books did Ernest Hemingway write ?
+
+Predictions:
+m.02kz_	50784.7998503059	http://rdf.freebase.com/ns/book.author.book_editions_published.1	http://rdf.freebase.com/ns/book.author.book_editions_published.2	1.7249372	7	The garden of Eden. | The Old Man and the Sea (York Notes) | The Old Man and the Sea | The Sun Also Rises | The Old Man and the Sea. (Lernmaterialien) | Men without women | The Dangerous Summer | The Torrents of Spring | For whom the bell tolls | Across the river and into the trees | [ and 93 more. ]
+
+True hyperpaths:
+m.02kz_	50784.7998503059	http://rdf.freebase.com/ns/film.film_story_contributor.film_story_credits.1	http://rdf.freebase.com/ns/film.film_story_contributor.film_story_credits.2	-3.8478494	3	The Sun Also Rises | To Have and Have Not | A Farewell to Arms | Soldier's Home | Women & Men: Stories of Seduction | For Whom the Bell Tolls | The Garden of Eden | The Old Man and the Sea | The Killers | After the Storm | [ and 5 more. ]
+m.02kz_	50784.7998503059	http://rdf.freebase.com/ns/film.film.story_by.2	http://rdf.freebase.com/ns/film.film.story_by.1	-5.6625123	3	The Sun Also Rises | To Have and Have Not | A Farewell to Arms | Soldier's Home | Women & Men: Stories of Seduction | For Whom the Bell Tolls | The Garden of Eden | The Old Man and the Sea | The Killers | After the Storm | [ and 5 more. ]
+
+Gold entities:
+The Sun Also Rises	The Complete Short Stories of Ernest Hemingway: The Finca Vigía Edition	A Farewell to Arms	The Old Man and the Sea	A Moveable Feast	The Snows of Kilimanjaro	The Fifth Column and the First Forty-Nine Stories	For Whom the Bell Tolls	Across the River and into the Trees	Ernest Hemingway: The Collected Stories
+
+Error type: 
+gold answer incomplete
+
+
+Question 48:
+What was George Washington 's legacy ?
+
+Predictions:
+m.034rd	56617.1842184609	http://rdf.freebase.com/ns/business.employment_tenure.person.inverse	http://rdf.freebase.com/ns/business.employment_tenure.company	0.2828151	15	United States of America
+
+True hyperpaths:
+m.034rd	56617.1842184609	http://rdf.freebase.com/ns/book.book_subject.works.1	http://rdf.freebase.com/ns/book.book_subject.works.2	-1.0806409	25	George Washington: Man and Monument | Catalogue Of The Engraved Portraits Of Washington | The Presidency of George Washington | George Washington on Leadership | George Washington | George Washington: A Biography | The quotable George Washington | Mount Vernon | His Excellency: George Washington | George Washington, the writer | [ and 15 more. ]
+m.034rd	56617.1842184609	http://rdf.freebase.com/ns/book.written_work.subjects.2	http://rdf.freebase.com/ns/book.written_work.subjects.1	-1.0781412	26	George Washington: Man and Monument | Catalogue Of The Engraved Portraits Of Washington | The Presidency of George Washington | George Washington on Leadership | George Washington | George Washington: A Biography | The quotable George Washington | Mount Vernon | His Excellency: George Washington | George Washington, the writer | [ and 15 more. ]
+
+Gold entities:
+Founding father
+
+Error type: 
+ambiguous question
+
+
+Question 49:
+What team did Ronaldo play for in 2003 ?
+
+Predictions:
+m.0hhqw	540861.266280843	http://rdf.freebase.com/ns/soccer.football_player.goals_scored	http://rdf.freebase.com/ns/soccer.football_goal.point_awarded_to	1.9762549	4	Brazil national football team
+
+True hyperpaths:
+m.02xt6q	3041.39286120719	http://rdf.freebase.com/ns/base.x2010fifaworldcupsouthafrica.world_cup_participant.world_cup_team	http://rdf.freebase.com/ns/base.x2010fifaworldcupsouthafrica.current_world_cup_squad.current_club	1.5061164	7	Real Madrid C.F.
+m.02xt6q	3041.39286120719	http://rdf.freebase.com/ns/base.x2010fifaworldcupsouthafrica.current_world_cup_squad.players.inverse	http://rdf.freebase.com/ns/base.x2010fifaworldcupsouthafrica.current_world_cup_squad.current_club	1.5626416	7	Real Madrid C.F.
+
+Gold entities:
+Real Madrid C.F.
+
+Error type: 
+multi entity
+
+
+Question 50:
+What type of religion does Argentina have ?
+
+Predictions:
+m.0jgd	32511.0136737313	http://rdf.freebase.com/ns/location.country.form_of_government.1	http://rdf.freebase.com/ns/location.country.form_of_government.2	0.61102176	78	Representative democracy | Constitutional republic | Presidential system | Federal republic
+
+True hyperpaths:
+m.0jgd	32511.0136737313	http://rdf.freebase.com/ns/location.statistical_region.religions	http://rdf.freebase.com/ns/location.religion_percentage.religion	-2.4756305	19	Judaism | Catholicism | Protestantism
+
+Gold entities:
+Protestantism	Catholicism	Judaism
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 51:
+Who won Utah Attorney General ?
+
+Predictions:
+m.07srw	16877.8174029728	http://rdf.freebase.com/ns/government.governmental_jurisdiction.official_symbols	http://rdf.freebase.com/ns/location.symbol_of_administrative_division.official_symbol_of.inverse	1.2679291	17	California Gull | Bonneville cutthroat trout | Industry | Calochortus nuttallii | Picea pungens
+
+True hyperpaths:
+m.07srw	16877.8174029728	http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials	http://rdf.freebase.com/ns/government.politician.government_positions_held.inverse	-5.334581	47	Henry H. Blood | J. Bracken Lee | Mark Shurtleff | Gary Herbert | Scott M. Matheson | Simon Bamberger | Herbert B. Maw | Greg Bell | George Dewey Clyde | William Spry | [ and 10 more. ]
+m.07srw	16877.8174029728	http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office.inverse	http://rdf.freebase.com/ns/government.government_position_held.office_holder	-5.3281217	47	Henry H. Blood | J. Bracken Lee | Mark Shurtleff | Gary Herbert | Scott M. Matheson | Simon Bamberger | Herbert B. Maw | Greg Bell | George Dewey Clyde | William Spry | [ and 10 more. ]
+m.07srw	16877.8174029728	http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office.inverse	http://rdf.freebase.com/ns/government.politician.government_positions_held.inverse	-5.7962565	47	Henry H. Blood | J. Bracken Lee | Mark Shurtleff | Gary Herbert | Scott M. Matheson | Simon Bamberger | Herbert B. Maw | Greg Bell | George Dewey Clyde | William Spry | [ and 10 more. ]
+m.07srw	16877.8174029728	http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials	http://rdf.freebase.com/ns/government.government_position_held.office_holder	-6.934652	47	Henry H. Blood | J. Bracken Lee | Mark Shurtleff | Gary Herbert | Scott M. Matheson | Simon Bamberger | Herbert B. Maw | Greg Bell | George Dewey Clyde | William Spry | [ and 10 more. ]
+
+Gold entities:
+Mark Shurtleff
+
+Error type: 
+gold answer incomplete|wrong relation (less frequent) (different type)
+
+
+Question 52:
+What artistic style did Henri Rousseau work in ?
+
+Predictions:
+m.02rdf6	29881.23917746	http://rdf.freebase.com/ns/people.deceased_person.place_of_death.1	http://rdf.freebase.com/ns/people.deceased_person.place_of_death.2	-0.54381156	58	Paris
+
+True hyperpaths:
+m.02rdf6	29881.23917746	http://rdf.freebase.com/ns/visual_art.visual_artist.associated_periods_or_movements.1	http://rdf.freebase.com/ns/visual_art.visual_artist.associated_periods_or_movements.2	-2.5239742	12	Naïve art | Post-Impressionism
+m.02rdf6	29881.23917746	http://rdf.freebase.com/ns/visual_art.art_period_movement.associated_artists.2	http://rdf.freebase.com/ns/visual_art.art_period_movement.associated_artists.1	-1.0262848	12	Naïve art | Post-Impressionism
+
+Gold entities:
+Post-Impressionism
+
+Error type: 
+gold answer incomplete|wrong relation (more frequent) (different type)
+
+
+Question 53:
+What countries does the Arctic Circle run through ?
+
+Predictions:
+m.0j9p	36915.7594419796	http://rdf.freebase.com/ns/location.location.adjoin_s	http://rdf.freebase.com/ns/location.location.adjoin_s.inverse	-1.8738184	47	Arctic | Arctic Circle
+
+True hyperpaths:
+
+Gold entities:
+North Greenland
+
+Error type: 
+no gold
+
+
+Question 54:
+What was Scottie Pippen known for ?
+
+Predictions:
+m.01vpgl	12978.8133239936	http://rdf.freebase.com/ns/basketball.basketball_player_stats.player.inverse	http://rdf.freebase.com/ns/basketball.basketball_player_stats.season	1.7458304	3	2002–03 NBA season | 2001–02 NBA season | 1993–94 NBA season | 1987–88 NBA season | 2003–04 NBA season | 1997–98 NBA season | 1992–93 NBA season | 1989–90 NBA season | 1991–92 NBA season | 1994–95 NBA season | [ and 7 more. ]
+
+True hyperpaths:
+m.01vpgl	12978.8133239936	http://rdf.freebase.com/ns/people.person.profession.1	http://rdf.freebase.com/ns/people.person.profession.2	1.5802684	128	Basketball player
+m.01vpgl	12978.8133239936	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.2	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.1	1.5575337	128	Basketball player
+
+Gold entities:
+Basketball player
+
+Error type: 
+wrong relation (less frequent) (different type)
+
+
+Question 55:
+What kind of products does Nike sell ?
+
+Predictions:
+m.0lwkh	91433.0267293953	http://rdf.freebase.com/ns/organization.organization.headquarters	http://rdf.freebase.com/ns/location.mailing_address.citytown	-0.4598409	30	Beaverton
+
+True hyperpaths:
+m.0lwkh	91433.0267293953	http://rdf.freebase.com/ns/business.industry.companies.2	http://rdf.freebase.com/ns/business.industry.companies.1	-6.2702756	3	Manufacturing | Athletic Shoes & Apparel | Clothing | Sports equipment | Footwear Manufacturing
+m.0lwkh	91433.0267293953	http://rdf.freebase.com/ns/business.business_operation.industry.1	http://rdf.freebase.com/ns/business.business_operation.industry.2	-7.4393697	3	Manufacturing | Athletic Shoes & Apparel | Clothing | Sports equipment | Footwear Manufacturing
+
+Gold entities:
+Athletic Shoes & Apparel
+
+Error type: 
+gold answer incomplete|wrong relation (less frequent) (different type)
+
+
+Question 56:
+What was Thomas Jefferson role in the Declaration of Independence ?
+
+Predictions:
+m.07cbs	41415.1491844366	http://rdf.freebase.com/ns/government.politician.government_positions_held	http://rdf.freebase.com/ns/government.government_office_or_title.office_holders.inverse	1.3010564	19	United States Secretary of State | President of the United States | United States Ambassador to France | Vice President of the United States
+
+True hyperpaths:
+m.07cbs	41415.1491844366	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.2	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.1	1.1356999	128	Author | Architect | Writer | Statesman | Inventor | Philosopher | Farmer | Lawyer | Teacher | Archaeologist
+m.07cbs	41415.1491844366	http://rdf.freebase.com/ns/people.person.profession.1	http://rdf.freebase.com/ns/people.person.profession.2	0.8802016	128	Author | Architect | Writer | Statesman | Inventor | Philosopher | Farmer | Lawyer | Teacher | Archaeologist
+
+Gold entities:
+Writer
+
+Error type: 
+multi entity
+
+
+Question 57:
+Which country won the Crimean War ?
+
+Predictions:
+m.0cmc2	1.54752806041748	http://rdf.freebase.com/ns/location.location.events.2	http://rdf.freebase.com/ns/location.location.events.1	-5.497969	14	White Sea | Black Sea | Baltic Sea | Balkans | Caucasus | Crimea
+
+True hyperpaths:
+m.0cmc2	1.54752806041748	http://rdf.freebase.com/ns/military.military_conflict.combatants	http://rdf.freebase.com/ns/military.military_combatant.military_conflicts.inverse	-15.8028755	2	County of Nassau | Russian Empire | United Kingdom | Second French Empire | Ottoman Empire | Kingdom of Sardinia
+m.0cmc2	1.54752806041748	http://rdf.freebase.com/ns/military.military_combatant_group.conflict.inverse	http://rdf.freebase.com/ns/military.military_combatant_group.combatants	-14.847792	2	County of Nassau | Russian Empire | United Kingdom | Second French Empire | Ottoman Empire | Kingdom of Sardinia
+m.0cmc2	1.54752806041748	http://rdf.freebase.com/ns/military.military_combatant_group.conflict.inverse	http://rdf.freebase.com/ns/military.military_combatant.military_conflicts.inverse	-17.855103	2	County of Nassau | Russian Empire | United Kingdom | Second French Empire | Ottoman Empire | Kingdom of Sardinia
+m.0cmc2	1.54752806041748	http://rdf.freebase.com/ns/military.military_conflict.combatants	http://rdf.freebase.com/ns/military.military_combatant_group.combatants	-17.37056	2	County of Nassau | Russian Empire | United Kingdom | Second French Empire | Ottoman Empire | Kingdom of Sardinia
+
+Gold entities:
+Russian Empire
+
+Error type: 
+comparative|wrong relation (more frequent) (different type)
+
+
+Question 58:
+Who played Stanley Kowalski in A Streetcar Named Desire movie ?
+
+Predictions:
+m.03bhwh	34084.5972522598	http://rdf.freebase.com/ns/film.film_character.portrayed_in_films	http://rdf.freebase.com/ns/film.performance.actor	2.6364286	69	Marlon Brando | Alec Baldwin | Treat Williams
+
+True hyperpaths:
+m.03bhwh	34084.5972522598	http://rdf.freebase.com/ns/tv.regular_tv_appearance.character.inverse	http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor	2.0646005	59	Marlon Brando
+m.03bhwh	34084.5972522598	http://rdf.freebase.com/ns/tv.regular_tv_appearance.character.inverse	http://rdf.freebase.com/ns/tv.tv_actor.starring_roles.inverse	2.1189675	59	Marlon Brando
+m.03bhwh	34084.5972522598	http://rdf.freebase.com/ns/tv.tv_character.appeared_in_tv_program	http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor	1.9059896	59	Marlon Brando
+m.03bhwh	34084.5972522598	http://rdf.freebase.com/ns/tv.tv_character.appeared_in_tv_program	http://rdf.freebase.com/ns/tv.tv_actor.starring_roles.inverse	2.149775	59	Marlon Brando
+
+Gold entities:
+Marlon Brando
+
+Error type: 
+gold relation wrong
+
+
+Question 59:
+Who does Brian Dawkins play for 2011 ?
+
+Predictions:
+m.04m4p5	41877.7784968186	http://rdf.freebase.com/ns/sports.pro_athlete.teams	http://rdf.freebase.com/ns/american_football.football_historical_roster_position.team	1.6390628	14	Philadelphia Eagles | Denver Broncos | Clemson Tigers football
+
+True hyperpaths:
+m.04m4p5	41877.7784968186	http://rdf.freebase.com/ns/american_football.player_game_statistics.player.inverse	http://rdf.freebase.com/ns/american_football.player_game_statistics.team	-0.74338806	7	Philadelphia Eagles | Denver Broncos
+m.04m4p5	41877.7784968186	http://rdf.freebase.com/ns/american_football.football_player.games	http://rdf.freebase.com/ns/american_football.player_game_statistics.team	-0.49809027	7	Philadelphia Eagles | Denver Broncos
+
+Gold entities:
+Denver Broncos
+
+Error type: 
+multi entity
+
+
+Question 60:
+What are the mountains in northern Spain ?
+
+Predictions:
+m.01_vzc	1.11630781292053	http://rdf.freebase.com/ns/location.location.geolocation	http://rdf.freebase.com/ns/location.location.geolocation.inverse	1.5730565	73	Balkan Mountains
+
+True hyperpaths:
+m.06mkj	28073.860364771	http://rdf.freebase.com/ns/location.location.partially_contains.1	http://rdf.freebase.com/ns/location.location.partially_contains.2	-5.1254563	7	Bay of Biscay | Pyrenees | Pic del Port Vell | Tagus | Pica d'Estats
+m.06mkj	28073.860364771	http://rdf.freebase.com/ns/location.location.partially_containedby.2	http://rdf.freebase.com/ns/location.location.partially_containedby.1	-4.581298	5	Bay of Biscay | Pyrenees | Pic del Port Vell | Tagus | Pica d'Estats
+
+Gold entities:
+Pyrenees
+
+Error type: 
+wrong entity
+
+
+Question 61:
+What state is Saint Louis University in ?
+
+Predictions:
+m.02tz9z	13402.9848734682	http://rdf.freebase.com/ns/organization.organization.headquarters	http://rdf.freebase.com/ns/location.mailing_address.citytown	2.1759777	30	St. Louis
+
+True hyperpaths:
+m.02tz9z	13402.9848734682	http://rdf.freebase.com/ns/organization.organization.headquarters	http://rdf.freebase.com/ns/location.mailing_address.state_province_region	1.6356059	17	Missouri
+
+Gold entities:
+Missouri
+
+Error type: 
+wrong relation (more frequent) (similar type)
+
+
+Question 62:
+What make of bike did Steve McQueen ride in the Great Escape ?
+
+Predictions:
+m.018rvr	2086.46006321942	http://rdf.freebase.com/ns/film.performance.film.inverse	http://rdf.freebase.com/ns/film.film_character.portrayed_in_films.inverse	0.2778234	6	Haynes | Ramsey 'The SBO' | Hilts 'The Cooler King' | Kramer | Lt. Cmdr. Eric Ashley-Pitt \"Dispersal\" | Werner 'The Ferret' | Lt. Dietrich | MacDonald 'Intelligence' | Blythe 'The Forger' | Dai Nimmo | [ and 17 more. ]
+
+True hyperpaths:
+m.012cj0	40330.3864515453	http://rdf.freebase.com/ns/film.film.written_by.2	http://rdf.freebase.com/ns/film.film.written_by.1	-3.6345487	3	Yucatan
+m.012cj0	40330.3864515453	http://rdf.freebase.com/ns/film.writer.film.1	http://rdf.freebase.com/ns/film.writer.film.2	-4.3141427	3	Yucatan
+
+Gold entities:
+Yucatan
+
+Error type: 
+gold relation wrong
+
+
+Question 63:
+Who or what influenced Frank Lloyd Wright ?
+
+Predictions:
+m.02wlk	14942.0866566506	http://rdf.freebase.com/ns/people.deceased_person.place_of_death.1	http://rdf.freebase.com/ns/people.deceased_person.place_of_death.2	-0.16960084	58	Phoenix
+
+True hyperpaths:
+m.02wlk	14942.0866566506	http://rdf.freebase.com/ns/influence.influence_node.influenced_by.1	http://rdf.freebase.com/ns/influence.influence_node.influenced_by.2	-17.021759	24	Henry David Thoreau | Ebenezer Howard | Louis Sullivan | William Morris | Bruce Price | Georges Gurdjieff | G. I. Gurdjieff | Elizabeth Gordon
+m.02wlk	14942.0866566506	http://rdf.freebase.com/ns/influence.influence_node.influenced.2	http://rdf.freebase.com/ns/influence.influence_node.influenced.1	-16.346455	24	Henry David Thoreau | Ebenezer Howard | Louis Sullivan | William Morris | Bruce Price | Georges Gurdjieff | G. I. Gurdjieff | Elizabeth Gordon
+
+Gold entities:
+Louis Sullivan	Bruce Price	Henry David Thoreau	Ebenezer Howard	William Morris	G. I. Gurdjieff	Elizabeth Gordon
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 64:
+What to see near Grand Canyon ?
+
+Predictions:
+m.0cnrr	9.41875324855368	http://rdf.freebase.com/ns/travel.tourist_attraction.near_travel_destination.2	http://rdf.freebase.com/ns/travel.tourist_attraction.near_travel_destination.1	-1.3541462	69	Grand Canyon
+
+True hyperpaths:
+m.0cns5	12895.7589546125	http://rdf.freebase.com/ns/location.location.contains.1	http://rdf.freebase.com/ns/location.location.contains.2	-1.947793	40	Grand Canyon National Park Superintendent's Residence | Grandview Mine | Grand Canyon Village Historic District | Grand Canyon Depot | Buckey O'Neill Cabin | Grand Canyon North Rim Headquarters | Grand Canyon Water Reclamation Plant | El Tovar Hotel | Grand Canyon South Rim Ranger's Dormitory
+m.0cns5	12895.7589546125	http://rdf.freebase.com/ns/location.location.containedby.2	http://rdf.freebase.com/ns/location.location.containedby.1	-2.184049	36	Grand Canyon National Park Superintendent's Residence | Grandview Mine | Grand Canyon Village Historic District | Grand Canyon Depot | Buckey O'Neill Cabin | Grand Canyon North Rim Headquarters | Grand Canyon Water Reclamation Plant | El Tovar Hotel | Grand Canyon South Rim Ranger's Dormitory
+
+Gold entities:
+Grand Canyon National Park Superintendent's Residence	Grand Canyon South Rim Ranger's Dormitory	Grand Canyon Village Historic District	Grand Canyon North Rim Headquarters	Grandview Mine	Grand Canyon Water Reclamation Plant	Buckey O'Neill Cabin	El Tovar Hotel	Grand Canyon Depot
+
+Error type: 
+gold relation wrong
+
+
+Question 65:
+What race is Vanessa Carlton ?
+
+Predictions:
+m.02sj66	5300.687259157	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.2	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.1	-0.23256004	128	Record producer | Singer | Musician | Singer-songwriter
+
+True hyperpaths:
+m.02sj66	5300.687259157	http://rdf.freebase.com/ns/people.person.ethnicity.1	http://rdf.freebase.com/ns/people.person.ethnicity.2	-5.694494	2	Scandinavians | Russian
+m.02sj66	5300.687259157	http://rdf.freebase.com/ns/people.ethnicity.people.2	http://rdf.freebase.com/ns/people.ethnicity.people.1	-6.7678447	2	Scandinavians | Russian
+
+Gold entities:
+Russian	Scandinavians
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 66:
+Who played Amy squirrel in bad teacher ?
+
+Predictions:
+m.02d_09	1.12970862455541	http://rdf.freebase.com/ns/tv.tv_character.appeared_in_tv_program	http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor	2.0014596	59	Lauren Tom
+
+True hyperpaths:
+m.0cp0ph6	8276.25422337142	http://rdf.freebase.com/ns/film.film.starring	http://rdf.freebase.com/ns/film.actor.film.inverse	-1.1652384	6	Jerry Lambert | Noah Dahl | Victoria Strauss | Kaitlyn Dever | Alanna Ubach | Dot Jones | Deirdre Lovejoy | Phyllis Smith | Aja Bair | Youlanda Davis | [ and 53 more. ]
+m.0cp0ph6	8276.25422337142	http://rdf.freebase.com/ns/film.performance.film.inverse	http://rdf.freebase.com/ns/film.actor.film.inverse	-0.81782603	6	Jerry Lambert | Noah Dahl | Victoria Strauss | Kaitlyn Dever | Alanna Ubach | Dot Jones | Deirdre Lovejoy | Phyllis Smith | Aja Bair | Youlanda Davis | [ and 53 more. ]
+m.0cp0ph6	8276.25422337142	http://rdf.freebase.com/ns/film.performance.film.inverse	http://rdf.freebase.com/ns/film.performance.actor	-0.014287055	6	Jerry Lambert | Noah Dahl | Victoria Strauss | Kaitlyn Dever | Alanna Ubach | Dot Jones | Deirdre Lovejoy | Phyllis Smith | Aja Bair | Youlanda Davis | [ and 53 more. ]
+m.0cp0ph6	8276.25422337142	http://rdf.freebase.com/ns/film.film.starring	http://rdf.freebase.com/ns/film.performance.actor	0.02636367	6	Jerry Lambert | Noah Dahl | Victoria Strauss | Kaitlyn Dever | Alanna Ubach | Dot Jones | Deirdre Lovejoy | Phyllis Smith | Aja Bair | Youlanda Davis | [ and 53 more. ]
+
+Gold entities:
+Lucy Punch
+
+Error type: 
+wrong entity|multi entity
+
+
+Question 67:
+Where is Staten Island Ferry ?
+
+Predictions:
+m.01rxr7	149857.542589486	http://rdf.freebase.com/ns/location.location.containedby.2	http://rdf.freebase.com/ns/location.location.containedby.1	-1.9115036	36	Fire Fighter
+
+True hyperpaths:
+
+Gold entities:
+Staten Island
+
+Error type: 
+no gold
+
+
+Question 68:
+What electorate does Anna Bligh represent ?
+
+Predictions:
+m.072_m3	32723.2744258461	http://rdf.freebase.com/ns/location.location.people_born_here.2	http://rdf.freebase.com/ns/location.location.people_born_here.1	1.2250161	105	Warwick
+
+True hyperpaths:
+m.072_m3	32723.2744258461	http://rdf.freebase.com/ns/government.politician.government_positions_held	http://rdf.freebase.com/ns/government.government_position_held.district_represented	0.86886644	11	Electoral district of South Brisbane
+m.072_m3	32723.2744258461	http://rdf.freebase.com/ns/government.government_position_held.office_holder.inverse	http://rdf.freebase.com/ns/government.political_district.representatives.inverse	0.7628903	11	Electoral district of South Brisbane
+m.072_m3	32723.2744258461	http://rdf.freebase.com/ns/government.government_position_held.office_holder.inverse	http://rdf.freebase.com/ns/government.government_position_held.district_represented	0.8357253	11	Electoral district of South Brisbane
+m.072_m3	32723.2744258461	http://rdf.freebase.com/ns/government.politician.government_positions_held	http://rdf.freebase.com/ns/government.political_district.representatives.inverse	0.64635265	11	Electoral district of South Brisbane
+
+Gold entities:
+Electoral district of South Brisbane
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 69:
+What Timezone is Elizabethtown Kentucky ?
+
+Predictions:
+m.0tdxc	55331.0774659655	http://rdf.freebase.com/ns/time.time_zone.locations_in_this_time_zone.2	http://rdf.freebase.com/ns/time.time_zone.locations_in_this_time_zone.1	1.4357626	57	Eastern Time Zone
+
+True hyperpaths:
+
+Gold entities:
+North American Eastern Time Zone
+
+Error type: 
+gold answer wrong
+
+
+Question 70:
+Who Will Plaxico Burress play for in 2011 ?
+
+Predictions:
+m.047j_j	907174.2410368	http://rdf.freebase.com/ns/sports.pro_athlete.teams	http://rdf.freebase.com/ns/american_football.football_team.current_roster.inverse	2.7668962	12	Pittsburgh Steelers
+
+True hyperpaths:
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_team.current_roster	http://rdf.freebase.com/ns/american_football.football_roster_position.team	-8.48287	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/dataworld.gardening_hint.last_referenced_by.inverse	http://rdf.freebase.com/ns/dataworld.gardening_hint.last_referenced_by	-7.8893905	110	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.player_rushing_statistics.team.inverse	http://rdf.freebase.com/ns/american_football.player_rushing_statistics.team	-5.411654	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/base.ontologies.ontology_instance_mapping.freebase_topic.inverse	http://rdf.freebase.com/ns/base.ontologies.ontology_instance_mapping.freebase_topic	-7.8473344	56	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.player_game_statistics.team.inverse	http://rdf.freebase.com/ns/american_football.player_game_statistics.team	-5.7337155	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.projection.player.inverse	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.player.projection.inverse	-6.517243	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.professional_sports_team.draft_picks	http://rdf.freebase.com/ns/sports.sports_league_draft_pick.team	-6.0967245	5	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.player.projection	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.player.projection.inverse	-7.076186	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team_season_record.team.inverse	http://rdf.freebase.com/ns/sports.sports_team.season_record.inverse	-5.4956603	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/common.webpage.topic.inverse	http://rdf.freebase.com/ns/common.webpage.topic	-8.305109	103	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/business.employment_tenure.company.inverse	http://rdf.freebase.com/ns/business.employment_tenure.company	-6.89799	15	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/tv.tv_actor.guest_roles	http://rdf.freebase.com/ns/tv.tv_actor.guest_roles.inverse	-8.130428	9	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/tv.tv_guest_role.actor.inverse	http://rdf.freebase.com/ns/tv.tv_guest_role.actor	-7.961949	9	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_team.historical_roster	http://rdf.freebase.com/ns/american_football.football_historical_roster_position.team	-8.691549	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_historical_roster_position.team.inverse	http://rdf.freebase.com/ns/american_football.football_historical_roster_position.team	-7.4053197	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team_roster.team.inverse	http://rdf.freebase.com/ns/american_football.football_team.historical_roster.inverse	-7.46538	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_historical_roster_position.team.inverse	http://rdf.freebase.com/ns/sports.sports_team_roster.team	-8.491907	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_team.current_roster	http://rdf.freebase.com/ns/american_football.football_team.current_roster.inverse	-7.3245034	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_roster_position.team.inverse	http://rdf.freebase.com/ns/american_football.football_team.current_roster.inverse	-6.825226	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/base.ontologies.ontology_instance.equivalent_instances	http://rdf.freebase.com/ns/base.ontologies.ontology_instance_mapping.freebase_topic	-8.439539	56	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_league_draft_pick.team.inverse	http://rdf.freebase.com/ns/sports.professional_sports_team.draft_picks.inverse	-6.6809916	5	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_team.historical_roster	http://rdf.freebase.com/ns/sports.sports_team_roster.team	-6.868833	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team_roster.team.inverse	http://rdf.freebase.com/ns/sports.sports_team.roster.inverse	-7.839769	6	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_league_participation.team.inverse	http://rdf.freebase.com/ns/sports.sports_team.league.inverse	-8.538105	6	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_historical_roster_position.team.inverse	http://rdf.freebase.com/ns/american_football.football_team.historical_roster.inverse	-8.469599	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team.roster	http://rdf.freebase.com/ns/sports.sports_team_roster.team	-8.332962	6	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/base.ontologies.ontology_instance.equivalent_instances	http://rdf.freebase.com/ns/base.ontologies.ontology_instance.equivalent_instances.inverse	-8.493872	56	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_roster_position.team.inverse	http://rdf.freebase.com/ns/american_football.football_roster_position.team	-7.66565	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team.roster	http://rdf.freebase.com/ns/american_football.football_historical_roster_position.team	-8.114258	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/base.ontologies.ontology_instance_mapping.freebase_topic.inverse	http://rdf.freebase.com/ns/base.ontologies.ontology_instance.equivalent_instances.inverse	-8.547329	56	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_team.historical_coaching_staff	http://rdf.freebase.com/ns/american_football.football_historical_coach_position.team	-5.6553254	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.player.projection	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.projection.player	-7.9803452	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.professional_sports_team.draft_picks	http://rdf.freebase.com/ns/sports.professional_sports_team.draft_picks.inverse	-5.7543044	5	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.player.nfl_team.1	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.player.nfl_team.2	-2.1772993	7	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_league_draft_pick.team.inverse	http://rdf.freebase.com/ns/sports.sports_league_draft_pick.team	-6.487487	5	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/business.employment_tenure.company.inverse	http://rdf.freebase.com/ns/business.employer.employees.inverse	-7.3310113	15	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/business.employer.employees	http://rdf.freebase.com/ns/business.employer.employees.inverse	-8.520103	15	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_team.historical_roster	http://rdf.freebase.com/ns/american_football.football_team.historical_roster.inverse	-6.8676333	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team.roster	http://rdf.freebase.com/ns/american_football.football_team.historical_roster.inverse	-9.483187	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team.league	http://rdf.freebase.com/ns/sports.sports_league_participation.team	-7.9273705	6	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.player_passing_statistics.team.inverse	http://rdf.freebase.com/ns/american_football.player_passing_statistics.team	-6.9152756	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_historical_coach_position.team.inverse	http://rdf.freebase.com/ns/american_football.football_historical_coach_position.team	-6.2625203	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_historical_roster_position.team.inverse	http://rdf.freebase.com/ns/sports.sports_team.roster.inverse	-6.7026887	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/tv.tv_guest_role.actor.inverse	http://rdf.freebase.com/ns/tv.tv_actor.guest_roles.inverse	-8.41865	9	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.game_passing_statistics.team.inverse	http://rdf.freebase.com/ns/american_football.game_passing_statistics.team	-6.5888324	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/common.topic.article	http://rdf.freebase.com/ns/common.topic.article.inverse	-7.7544026	122	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_team.historical_roster	http://rdf.freebase.com/ns/sports.sports_team.roster.inverse	-8.038666	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team.season_record	http://rdf.freebase.com/ns/sports.sports_team.season_record.inverse	-6.737141	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team_roster.team.inverse	http://rdf.freebase.com/ns/american_football.football_historical_roster_position.team	-8.119526	4	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.game_receiving_statistics.team.inverse	http://rdf.freebase.com/ns/american_football.game_receiving_statistics.team	-7.0180683	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.player_receiving_statistics.team.inverse	http://rdf.freebase.com/ns/american_football.player_receiving_statistics.team	-6.527451	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team_season_record.team.inverse	http://rdf.freebase.com/ns/sports.sports_team_season_record.team	-6.4849224	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team.league	http://rdf.freebase.com/ns/sports.sports_team.league.inverse	-7.547319	6	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_league_participation.team.inverse	http://rdf.freebase.com/ns/sports.sports_league_participation.team	-7.2292566	6	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team.season_record	http://rdf.freebase.com/ns/sports.sports_team_season_record.team	-5.4319406	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_team.historical_coaching_staff	http://rdf.freebase.com/ns/american_football.football_team.historical_coaching_staff.inverse	-6.476894	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team.roster	http://rdf.freebase.com/ns/sports.sports_team.roster.inverse	-8.153723	6	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/business.employer.employees	http://rdf.freebase.com/ns/business.employment_tenure.company	-7.8408875	15	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/tv.tv_actor.guest_roles	http://rdf.freebase.com/ns/tv.tv_guest_role.actor	-9.204433	9	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.game_rushing_statistics.team.inverse	http://rdf.freebase.com/ns/american_football.game_rushing_statistics.team	-6.0925045	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/american_football.football_historical_coach_position.team.inverse	http://rdf.freebase.com/ns/american_football.football_team.historical_coaching_staff.inverse	-6.689999	3	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/sports.sports_team_roster.team.inverse	http://rdf.freebase.com/ns/sports.sports_team_roster.team	-8.746279	6	New York Jets
+m.05g49	3.83853154009956	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.projection.player.inverse	http://rdf.freebase.com/ns/user.szaijan.fantasy_football.projection.player	-7.3099904	3	New York Jets
+
+Gold entities:
+New York Jets
+
+Error type: 
+multi entity
+
+
+Question 71:
+What are all the countries in North Africa ?
+
+Predictions:
+m.0dg3n1	5.93646053040098	http://rdf.freebase.com/ns/base.locations.countries.continent.2	http://rdf.freebase.com/ns/base.locations.countries.continent.1	3.11593	8	Djibouti | Central African Republic | Rwanda | Niger | Mali | Senegal | Swaziland | Liberia | South Africa | Madagascar | [ and 44 more. ]
+
+True hyperpaths:
+m.05g2v	89094.6428550351	http://rdf.freebase.com/ns/location.location.contains.1	http://rdf.freebase.com/ns/location.location.contains.2	-1.9243956	40	Red Sea Governorate | Roman Republic | Sus al-Aksa | Damietta Governorate | Sohag Governorate | United Arab Republic | Suez Governorate | Asyut Governorate | Giza Governorate | Roman Empire | [ and 30 more. ]
+m.05g2v	89094.6428550351	http://rdf.freebase.com/ns/location.location.containedby.2	http://rdf.freebase.com/ns/location.location.containedby.1	-1.9007657	36	Red Sea Governorate | Roman Republic | Sus al-Aksa | Damietta Governorate | Sohag Governorate | United Arab Republic | Suez Governorate | Asyut Governorate | Giza Governorate | Roman Empire | [ and 30 more. ]
+
+Gold entities:
+Sus al-Aksa	Rashidun Caliphate	Ptolemaic Egypt	Western Roman Empire	Maghreb	Sudan	Ancient Greece	Ptolemaic Kingdom	Roman Republic	Roman Empire
+
+Error type: 
+wrong entity
+
+
+Question 72:
+Who is the governor of Virginia 2011 ?
+
+Predictions:
+m.0hd1l	7.42610577871756	http://rdf.freebase.com/ns/people.place_lived.person.inverse	http://rdf.freebase.com/ns/people.place_lived.person	1.614824	14	Jesse Ventura
+
+True hyperpaths:
+m.07z1m	4597.50617311313	http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials	http://rdf.freebase.com/ns/government.politician.government_positions_held.inverse	1.0873874	47	Thomas Jefferson | Harry F. Byrd, Jr. | John S. Edwards | Burr Harrison | George Tankard Garrison | Carter Glass | Creigh Deeds | Joseph Draper | Richard L. T. Beale | Francis Preston Blair | [ and 117 more. ]
+m.07z1m	4597.50617311313	http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office.inverse	http://rdf.freebase.com/ns/government.politician.government_positions_held.inverse	1.1585727	47	Thomas Jefferson | Harry F. Byrd, Jr. | John S. Edwards | Burr Harrison | George Tankard Garrison | Carter Glass | Creigh Deeds | Joseph Draper | Richard L. T. Beale | Francis Preston Blair | [ and 117 more. ]
+m.07z1m	4597.50617311313	http://rdf.freebase.com/ns/government.governmental_jurisdiction.governing_officials	http://rdf.freebase.com/ns/government.government_position_held.office_holder	1.0160627	47	Thomas Jefferson | Harry F. Byrd, Jr. | John S. Edwards | Burr Harrison | George Tankard Garrison | Carter Glass | Creigh Deeds | Joseph Draper | Richard L. T. Beale | Francis Preston Blair | [ and 117 more. ]
+m.07z1m	4597.50617311313	http://rdf.freebase.com/ns/government.government_position_held.jurisdiction_of_office.inverse	http://rdf.freebase.com/ns/government.government_position_held.office_holder	1.254457	47	Thomas Jefferson | Harry F. Byrd, Jr. | John S. Edwards | Burr Harrison | George Tankard Garrison | Carter Glass | Creigh Deeds | Joseph Draper | Richard L. T. Beale | Francis Preston Blair | [ and 117 more. ]
+
+Gold entities:
+Bob McDonnell
+
+Error type: 
+multi entity|wrong relation (less frequent) (similar type)
+
+
+Question 73:
+What was the first book Charles Dickens wrote ?
+
+Predictions:
+m.01v9724	31216.2433783963	http://rdf.freebase.com/ns/book.book_edition.author_editor.2	http://rdf.freebase.com/ns/book.book_edition.author_editor.1	1.7814931	7	A Tale of Two Cities (Ultimate Classics) | David Copperfield | A Tale of Two Cities (Progressive English) | A Tale of Two Cities (Dramatized) | A Christmas Carol (New Longman Literature) | A Tale of Two Cities (Clear Print) | A Christmas Carol (Enriched Classics) | A Christmas Carol (Watermill Classics) | A Christmas Carol (Webster's Korean Thesaurus Edition) | A Tale of Two Cities (Naxos AudioBooks) | [ and 159 more. ]
+
+True hyperpaths:
+m.01v9724	31216.2433783963	http://rdf.freebase.com/ns/film.film.story_by.2	http://rdf.freebase.com/ns/film.film.story_by.1	0.13260907	3	David Copperfield | Dombey and Son | Twisted | A Diva's Christmas Carol | Hard Times | Oliver Twist | Christmas Carol: The Movie | An American Christmas Carol | A Carol for Another Christmas | Mister Magoo's Christmas Carol | [ and 26 more. ]
+m.01v9724	31216.2433783963	http://rdf.freebase.com/ns/film.film_story_contributor.film_story_credits.1	http://rdf.freebase.com/ns/film.film_story_contributor.film_story_credits.2	0.8747468	3	David Copperfield | Dombey and Son | Twisted | A Diva's Christmas Carol | Hard Times | Oliver Twist | Christmas Carol: The Movie | An American Christmas Carol | A Carol for Another Christmas | Mister Magoo's Christmas Carol | [ and 26 more. ]
+
+Gold entities:
+Oliver Twist
+
+Error type: 
+comparative
+
+
+Question 74:
+Who played Berger in Sex And The City ?
+
+Predictions:
+m.03x6l3	39.8195113865487	http://rdf.freebase.com/ns/sports.pro_athlete.teams	http://rdf.freebase.com/ns/soccer.football_roster_position.team	-0.13237762	18	AC Sparta Prague
+
+True hyperpaths:
+
+Gold entities:
+for amos
+
+Error type: 
+no gold
+
+
+Question 75:
+What are some good books like looking for Alaska ?
+
+Predictions:
+m.0hjy	14908.6387582943	http://rdf.freebase.com/ns/book.newspaper.circulation_areas.2	http://rdf.freebase.com/ns/book.newspaper.circulation_areas.1	0.95745146	4	Petroleum News
+
+True hyperpaths:
+m.0hjy	14908.6387582943	http://rdf.freebase.com/ns/book.book_subject.works.1	http://rdf.freebase.com/ns/book.book_subject.works.2	-5.5249743	25	Bird Girl and the Man Who Followed the Sun | Whispers of Winter | A taint in the blood | From Paris to New York by Land | After the spill | About Grace | The Royal Treatment | Raising ourselves | Caribou Rising | Rivers of gold | [ and 67 more. ]
+m.0hjy	14908.6387582943	http://rdf.freebase.com/ns/book.written_work.subjects.2	http://rdf.freebase.com/ns/book.written_work.subjects.1	-6.3552833	26	Bird Girl and the Man Who Followed the Sun | Whispers of Winter | A taint in the blood | From Paris to New York by Land | After the spill | About Grace | The Royal Treatment | Raising ourselves | Caribou Rising | Rivers of gold | [ and 67 more. ]
+
+Gold entities:
+Wildest Alaska	The Cleansing	Through the Gold-Fields of Alaska to Bering Straits	White Fang	Drop City	Alaska	The Royal Mess	Going to extremes	Into the Wild	Four Quarters of Light
+
+Error type: 
+ambiguous question
+
+
+Question 76:
+Who did Vasco de Gama explore for ?
+
+Predictions:
+m.0c8dk	31458.969235902	http://rdf.freebase.com/ns/symbols.namesake.named_after.2	http://rdf.freebase.com/ns/symbols.namesake.named_after.1	0.88648427	11	Vasco da Gama Tower | Vasco da Gama | Clube de Regatas Vasco da Gama | Vasco da Gama Bridge
+
+True hyperpaths:
+m.0c8dk	31458.969235902	http://rdf.freebase.com/ns/people.person.nationality.1	http://rdf.freebase.com/ns/people.person.nationality.2	-2.554158	69	Portugal
+
+Gold entities:
+Portugal
+
+Error type: 
+gold relation wrong
+
+
+Question 77:
+What date did Sally Pearson won gold ?
+
+Predictions:
+m.0287hgn	34620.8909524545	http://rdf.freebase.com/ns/location.location.people_born_here.2	http://rdf.freebase.com/ns/location.location.people_born_here.1	-0.998348	105	Paddington
+
+True hyperpaths:
+m.0287hgn	34620.8909524545	http://rdf.freebase.com/ns/olympics.olympic_athlete.country	http://rdf.freebase.com/ns/olympics.olympic_games.athletes.inverse	-7.333504	3	2012 Summer Olympics | 2008 Summer Olympics
+m.0287hgn	34620.8909524545	http://rdf.freebase.com/ns/olympics.olympic_athlete.medals_won	http://rdf.freebase.com/ns/olympics.olympic_games.medals_awarded.inverse	-6.3355155	3	2012 Summer Olympics | 2008 Summer Olympics
+m.0287hgn	34620.8909524545	http://rdf.freebase.com/ns/olympics.olympic_medal_honor.medalist.inverse	http://rdf.freebase.com/ns/olympics.olympic_medal_honor.olympics	-6.5277553	3	2012 Summer Olympics | 2008 Summer Olympics
+m.0287hgn	34620.8909524545	http://rdf.freebase.com/ns/olympics.olympic_athlete_affiliation.athlete.inverse	http://rdf.freebase.com/ns/olympics.olympic_games.athletes.inverse	-6.538118	3	2012 Summer Olympics | 2008 Summer Olympics
+m.0287hgn	34620.8909524545	http://rdf.freebase.com/ns/olympics.olympic_athlete.medals_won	http://rdf.freebase.com/ns/olympics.olympic_medal_honor.olympics	-6.852944	3	2012 Summer Olympics | 2008 Summer Olympics
+m.0287hgn	34620.8909524545	http://rdf.freebase.com/ns/olympics.olympic_athlete.country	http://rdf.freebase.com/ns/olympics.olympic_athlete_affiliation.olympics	-6.9731116	3	2012 Summer Olympics | 2008 Summer Olympics
+m.0287hgn	34620.8909524545	http://rdf.freebase.com/ns/olympics.olympic_medal_honor.medalist.inverse	http://rdf.freebase.com/ns/olympics.olympic_games.medals_awarded.inverse	-7.042927	3	2012 Summer Olympics | 2008 Summer Olympics
+m.0287hgn	34620.8909524545	http://rdf.freebase.com/ns/olympics.olympic_athlete_affiliation.athlete.inverse	http://rdf.freebase.com/ns/olympics.olympic_athlete_affiliation.olympics	-7.3806443	3	2012 Summer Olympics | 2008 Summer Olympics
+
+Gold entities:
+2008 Summer Olympics	2012 Summer Olympics
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 78:
+Where is Mitt Romney 's family from ?
+
+Predictions:
+m.0271_s	23667.1156349207	http://rdf.freebase.com/ns/people.person.parents.1	http://rdf.freebase.com/ns/people.person.parents.2	1.2695433	36	George W. Romney | Lenore Romney
+
+True hyperpaths:
+m.0271_s	23667.1156349207	http://rdf.freebase.com/ns/location.location.people_born_here.2	http://rdf.freebase.com/ns/location.location.people_born_here.1	-2.908937	105	Detroit
+m.0271_s	23667.1156349207	http://rdf.freebase.com/ns/people.person.place_of_birth.1	http://rdf.freebase.com/ns/people.person.place_of_birth.2	-2.806974	105	Detroit
+
+Gold entities:
+Detroit
+
+Error type: 
+wrong relation (less frequent) (different type)
+
+
+Question 79:
+Who played Elaine the pain ?
+
+Predictions:
+m.018twn	4.43905517565401	http://rdf.freebase.com/ns/film.film_character.portrayed_in_films	http://rdf.freebase.com/ns/film.performance.actor	2.0818937	69	Hilary Joyalle
+
+True hyperpaths:
+m.01djc5	34.2757596183268	http://rdf.freebase.com/ns/tv.tv_character.appeared_in_tv_program	http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor	1.4142991	59	Julia Louis-Dreyfus
+m.01djc5	34.2757596183268	http://rdf.freebase.com/ns/tv.regular_tv_appearance.character.inverse	http://rdf.freebase.com/ns/tv.tv_actor.starring_roles.inverse	1.6490335	59	Julia Louis-Dreyfus
+m.01djc5	34.2757596183268	http://rdf.freebase.com/ns/tv.regular_tv_appearance.character.inverse	http://rdf.freebase.com/ns/tv.regular_tv_appearance.actor	1.6592939	59	Julia Louis-Dreyfus
+m.01djc5	34.2757596183268	http://rdf.freebase.com/ns/tv.tv_character.appeared_in_tv_program	http://rdf.freebase.com/ns/tv.tv_actor.starring_roles.inverse	1.774302	59	Julia Louis-Dreyfus
+
+Gold entities:
+Julia Louis-Dreyfus
+
+Error type: 
+wrong entity
+
+
+Question 80:
+What states make up the Midwest us ?
+
+Predictions:
+m.0q76g	6006.00730978406	http://rdf.freebase.com/ns/location.adjoining_relationship.adjoins.inverse	http://rdf.freebase.com/ns/location.location.adjoin_s.inverse	2.0636365	42	Midwestern United States | Southern United States | Western United States | Northeastern United States
+
+True hyperpaths:
+m.0q76g	6006.00730978406	http://rdf.freebase.com/ns/location.location.contains.1	http://rdf.freebase.com/ns/location.location.contains.2	2.0007038	40	North Dakota | Council Grove | Ohio | Indiana | Nebraska | Kansas | Wisconsin
+m.0q76g	6006.00730978406	http://rdf.freebase.com/ns/location.location.containedby.2	http://rdf.freebase.com/ns/location.location.containedby.1	2.0632696	36	North Dakota | Council Grove | Ohio | Indiana | Nebraska | Kansas | Wisconsin
+
+Gold entities:
+Wisconsin	North Dakota	Kansas	Council Grove	Nebraska	Indiana	Ohio
+
+Error type: 
+wrong relation (more frequent) (similar type)
+
+
+Question 81:
+What drink did John Pemberton create ?
+
+Predictions:
+m.0h24w	101543.86832827	http://rdf.freebase.com/ns/organization.organization_founder.organizations_founded.1	http://rdf.freebase.com/ns/organization.organization_founder.organizations_founded.2	-0.257958	10	The Coca-Cola Company
+
+True hyperpaths:
+m.0h24w	101543.86832827	http://rdf.freebase.com/ns/law.invention.inventor.2	http://rdf.freebase.com/ns/law.invention.inventor.1	-0.49196148	23	Coca-Cola
+m.0h24w	101543.86832827	http://rdf.freebase.com/ns/law.inventor.inventions.1	http://rdf.freebase.com/ns/law.inventor.inventions.2	-0.79732	23	Coca-Cola
+
+Gold entities:
+Coca-Cola
+
+Error type: 
+wrong relation (less frequent) (different type)
+
+
+Question 82:
+What are some of Leonardo da Vinci most famous inventions ?
+
+Predictions:
+m.04lg6	27966.9603490554	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.2	http://rdf.freebase.com/ns/people.profession.people_with_this_profession.1	1.3929524	128	Scientist | Sculptor | Architect | Writer | Civil engineer | Artist | Painter | Anatomist | Botanist | Inventor | [ and 3 more. ]
+
+True hyperpaths:
+m.04lg6	27966.9603490554	http://rdf.freebase.com/ns/law.inventor.inventions.1	http://rdf.freebase.com/ns/law.inventor.inventions.2	-0.7185782	23	Double hull | Viola organista
+m.04lg6	27966.9603490554	http://rdf.freebase.com/ns/law.invention.inventor.2	http://rdf.freebase.com/ns/law.invention.inventor.1	-0.6475785	23	Double hull | Viola organista
+
+Gold entities:
+Double hull	Viola organista
+
+Error type: 
+wrong relation (more frequent) (different type)
+
+
+Question 83:
+Where Laura Ingalls Wilder lived ?
+
+Predictions:
+m.01bt87	110736.871035404	http://rdf.freebase.com/ns/people.person.nationality.1	http://rdf.freebase.com/ns/people.person.nationality.2	-0.40161395	69	United States of America
+
+True hyperpaths:
+m.01bt87	110736.871035404	http://rdf.freebase.com/ns/people.place_lived.person.inverse	http://rdf.freebase.com/ns/people.place_lived.location	-0.7159388	65	South Dakota | Wisconsin
+m.01bt87	110736.871035404	http://rdf.freebase.com/ns/people.person.places_lived	http://rdf.freebase.com/ns/people.place_lived.location	-1.896591	65	South Dakota | Wisconsin
+
+Gold entities:
+South Dakota	Wisconsin
+
+Error type: 
+ambiguous question
+
+
+Question 84:
+What to see and do in Vancouver Washington ?
+
+Predictions:
+m.0ckhc	27824.2191229051	http://rdf.freebase.com/ns/location.location.contains.1	http://rdf.freebase.com/ns/location.location.contains.2	-0.2602017	40	Evergreen Hotel | Washington School for the Blind | House of Providence | Fort Vancouver Barracks Officers Row | Washington State University, Vancouver | Emil Fries Piano Hospital and Training Center | Clark College | Phagans Orchards Beauty School | International Air Academy Inc | Vancouver-Portland Bridge | [ and 11 more. ]
+
+True hyperpaths:
+m.0ckhc	27824.2191229051	http://rdf.freebase.com/ns/location.mailing_address.citytown.inverse	http://rdf.freebase.com/ns/architecture.structure.address.inverse	-3.5434284	1	Covington House | Evergreen Hotel | House of Providence | Slocum House | Hidden Houses
+
+Gold entities:
+Slocum House	Fort Vancouver	Fort Vancouver Barracks Officers Row	Fort Vancouver National Historic Site	Vancouver National Historic Reserve Historic District	Officers Row	House of Providence	Covington House	Evergreen Hotel	Hidden Houses
+
+Error type: 
+gold relation wrong
+
+
+Question 85:
+What did Alice Paul accomplish ?
+
+Predictions:
+m.02lp71	32568.0994565191	http://rdf.freebase.com/ns/base.activism.activist.area_of_activism.1	http://rdf.freebase.com/ns/base.activism.activist.area_of_activism.2	1.5856956	6	Women's suffrage
+
+True hyperpaths:
+m.02lp71	32568.0994565191	http://rdf.freebase.com/ns/organization.organization_founder.organizations_founded.1	http://rdf.freebase.com/ns/organization.organization_founder.organizations_founded.2	-1.9092731	10	National Woman's Party | Silent Sentinels
+m.02lp71	32568.0994565191	http://rdf.freebase.com/ns/organization.organization.founders.2	http://rdf.freebase.com/ns/organization.organization.founders.1	-1.8661754	10	National Woman's Party | Silent Sentinels
+
+Gold entities:
+Silent Sentinels	National Woman's Party
+
+Error type: 
+ambiguous question
+
+
+Question 86:
+What was the Japanese war called ?
+
+Predictions:
+m.03_3d	48.928068696235	http://rdf.freebase.com/ns/base.aareas.schema.administrative_area.administrative_children.1	http://rdf.freebase.com/ns/base.aareas.schema.administrative_area.administrative_children.2	1.1520224	10	Toyama Prefecture | Nagano Prefecture | Fukushima Prefecture | Kagawa Prefecture | Shimane Prefecture | Shiga Prefecture | Ishikawa Prefecture | Fukui Prefecture | Kanagawa Prefecture | Yamagata Prefecture | [ and 37 more. ]
+
+True hyperpaths:
+m.03_3d	48.928068696235	http://rdf.freebase.com/ns/military.military_command.military_combatant.inverse	http://rdf.freebase.com/ns/military.military_command.military_conflict	-7.328689	2	Battle of Nanking | World War II
+m.03_3d	48.928068696235	http://rdf.freebase.com/ns/military.military_command.military_combatant.inverse	http://rdf.freebase.com/ns/military.military_conflict.commanders.inverse	-7.5665174	2	Battle of Nanking | World War II
+m.03_3d	48.928068696235	http://rdf.freebase.com/ns/military.military_combatant.military_commanders	http://rdf.freebase.com/ns/military.military_conflict.commanders.inverse	-7.089087	2	Battle of Nanking | World War II
+m.03_3d	48.928068696235	http://rdf.freebase.com/ns/military.military_combatant.military_commanders	http://rdf.freebase.com/ns/military.military_command.military_conflict	-6.544087	2	Battle of Nanking | World War II
+
+Gold entities:
+World War II
+
+Error type: 
+gold relation wrong
+
+
+Question 87:
+What is the title of George Bush 's new book ?
+
+Predictions:
+m.09b6zr	4830.58474197361	http://rdf.freebase.com/ns/base.inaugurations.inauguration.president.2	http://rdf.freebase.com/ns/base.inaugurations.inauguration.president.1	0.44480228	6	George W. Bush 2001 presidential inauguration | George W. Bush 2005 presidential inauguration
+
+True hyperpaths:
+m.09b6zr	4830.58474197361	http://rdf.freebase.com/ns/book.written_work.author.2	http://rdf.freebase.com/ns/book.written_work.author.1	-5.495708	12	We will prevail | Economic Report Of The President And The Annual Report Of The Council Of Economic Advisers | Public Papers of the Presidents of the United States, George W. Bush, 2002, Bk. 1, January 1 to June 30, 2002 | Stockholm Convention on Organic Pollutants | U.s. Trade And Investment Policy Toward Sub-saharan Africa And Implementation Of The African Growth And Opportunity Act | A Charge to Keep | National Strategy for Homeland Security | Third Report On The Operation Of The Andean Trade Preference Act | 2001 Trade Policy Agenda And 2000 Annual Report On The Trade Agreements Program | Avec l'aide de Dieu | [ and 5 more. ]
+m.09b6zr	4830.58474197361	http://rdf.freebase.com/ns/book.author.works_written.1	http://rdf.freebase.com/ns/book.author.works_written.2	-4.8205533	12	We will prevail | Economic Report Of The President And The Annual Report Of The Council Of Economic Advisers | Public Papers of the Presidents of the United States, George W. Bush, 2002, Bk. 1, January 1 to June 30, 2002 | Stockholm Convention on Organic Pollutants | U.s. Trade And Investment Policy Toward Sub-saharan Africa And Implementation Of The African Growth And Opportunity Act | A Charge to Keep | National Strategy for Homeland Security | Third Report On The Operation Of The Andean Trade Preference Act | 2001 Trade Policy Agenda And 2000 Annual Report On The Trade Agreements Program | Avec l'aide de Dieu | [ and 5 more. ]
+
+Gold entities:
+National Strategy for Homeland Security
+
+Error type: 
+wrong relation (less frequent) (different type)
+
+
+Question 88:
+What government does Iraq use ?
+
+Predictions:
+m.0d05q4	10983.022390057	http://rdf.freebase.com/ns/location.country.form_of_government.1	http://rdf.freebase.com/ns/location.country.form_of_government.2	1.2148417	78	Republic | Parliamentary republic | Federal republic | Parliamentary system
+
+True hyperpaths:
+
+Gold entities:
+Prime Minister of Iraq	President of Iraq
+
+Error type: 
+gold answer incomplete
+
+
+Question 89:
+Where was the Ottoman empire based ?
+
+Predictions:
+m.05kyr	44669.2783099284	http://rdf.freebase.com/ns/location.country.capital.1	http://rdf.freebase.com/ns/location.country.capital.2	0.78420544	25	Edirne | Söğüt | Bursa | Istanbul | İnegöl | Constantinople
+
+True hyperpaths:
+m.05kyr	44669.2783099284	http://rdf.freebase.com/ns/military.military_combatant.force_deployments	http://rdf.freebase.com/ns/military.force_strength.combatant	-11.161554	10	German Empire | Austria-Hungary | Ottoman Empire
+m.05kyr	44669.2783099284	http://rdf.freebase.com/ns/military.military_combatant.casualties	http://rdf.freebase.com/ns/military.casualties.combatant	-12.583797	9	German Empire | Austria-Hungary | Ottoman Empire
+m.05kyr	44669.2783099284	http://rdf.freebase.com/ns/military.casualties.combatant.inverse	http://rdf.freebase.com/ns/military.casualties.combatant	-14.997807	9	German Empire | Austria-Hungary | Ottoman Empire
+m.05kyr	44669.2783099284	http://rdf.freebase.com/ns/military.force_strength.combatant.inverse	http://rdf.freebase.com/ns/military.force_strength.combatant	-11.601164	10	German Empire | Austria-Hungary | Ottoman Empire
+m.05kyr	44669.2783099284	http://rdf.freebase.com/ns/military.force_strength.combatant.inverse	http://rdf.freebase.com/ns/military.military_combatant.force_deployments.inverse	-9.127256	10	German Empire | Austria-Hungary | Ottoman Empire
+m.05kyr	44669.2783099284	http://rdf.freebase.com/ns/military.military_combatant.casualties	http://rdf.freebase.com/ns/military.military_combatant.casualties.inverse	-13.920517	9	German Empire | Austria-Hungary | Ottoman Empire
+m.05kyr	44669.2783099284	http://rdf.freebase.com/ns/military.casualties.combatant.inverse	http://rdf.freebase.com/ns/military.military_combatant.casualties.inverse	-13.298557	9	German Empire | Austria-Hungary | Ottoman Empire
+m.05kyr	44669.2783099284	http://rdf.freebase.com/ns/military.military_combatant.force_deployments	http://rdf.freebase.com/ns/military.military_combatant.force_deployments.inverse	-11.274414	10	German Empire | Austria-Hungary | Ottoman Empire
+
+Gold entities:
+Austria-Hungary	Kingdom of Bulgaria	German Empire
+
+Error type: 
+gold answer wrong
+
+
+Question 90:
+What was Tycho Brahe theory ?
+
+Predictions:
+m.07d2x	36107.0148628364	http://rdf.freebase.com/ns/influence.influence_node.influenced_by.1	http://rdf.freebase.com/ns/influence.influence_node.influenced_by.2	0.2627388	24	Ptolemy | Nicolaus Copernicus
+
+True hyperpaths:
+m.07d2x	36107.0148628364	http://rdf.freebase.com/ns/base.kwebbase.kwsentence.kwtopic.2	http://rdf.freebase.com/ns/base.kwebbase.kwsentence.kwtopic.1	-18.223042	6	In 1595 the Dutch cartographer Blaeuw spent six months at Urania copying Brahe's unpublished stellar positions onto a celestial globe and making a map of the heavens. | At Brahe's death not long after, he left all his material to Kepler. | His solar system was used by Scaliger. | It was brighter than Venus and appeared in the constellation Casssiopeia. | His work related to that of Al Battani,  and T. Bartholin. | To question it was considered blasphemous by many. | He entered Leipzig University in 1562 and in August 1563 he made his first recorded observation: a conjunction (an overlap) of Jupiter and Saturn. | His observations and measurements showed that the new star was positioned beyond the Moon and was in the area of fixed stars (a region which was supposed to be of unchanging perfection). | He also made a study of the solar system and he produced his own astronomical system in which the planets revolved around the Sun while the Sun moved around a fixed Earth. | The following year, Brahe published his findings in \"De nova stella\". | [ and 32 more. ]
+m.07d2x	36107.0148628364	http://rdf.freebase.com/ns/base.kwebbase.kwtopic.has_sentences.1	http://rdf.freebase.com/ns/base.kwebbase.kwtopic.has_sentences.2	-19.695234	6	In 1595 the Dutch cartographer Blaeuw spent six months at Urania copying Brahe's unpublished stellar positions onto a celestial globe and making a map of the heavens. | At Brahe's death not long after, he left all his material to Kepler. | His solar system was used by Scaliger. | It was brighter than Venus and appeared in the constellation Casssiopeia. | His work related to that of Al Battani,  and T. Bartholin. | To question it was considered blasphemous by many. | He entered Leipzig University in 1562 and in August 1563 he made his first recorded observation: a conjunction (an overlap) of Jupiter and Saturn. | His observations and measurements showed that the new star was positioned beyond the Moon and was in the area of fixed stars (a region which was supposed to be of unchanging perfection). | He also made a study of the solar system and he produced his own astronomical system in which the planets revolved around the Sun while the Sun moved around a fixed Earth. | The following year, Brahe published his findings in \"De nova stella\". | [ and 32 more. ]
+
+Gold entities:
+Brahe's astronomical investigations began to suggest that the existing literature on the solar system was inaccurate.
+
+Error type: 
+answer is description
+
+
+Question 91:
+What banjo does Scott avett play ?
+
+Predictions:
+m.05p6g6s	35904.817157181	http://rdf.freebase.com/ns/common.topic.article	http://rdf.freebase.com/ns/common.topic.article.inverse	-0.72265625	122	Scott Avett
+
+True hyperpaths:
+
+Gold entities:
+Banjo
+
+Error type: 
+gold answer wrong
+
+
+Question 92:
+Who did Tom Hanks play in Apollo 13 ?
+
+Predictions:
+m.011yd2	432.31960525895	http://rdf.freebase.com/ns/film.performance.film.inverse	http://rdf.freebase.com/ns/film.film_character.portrayed_in_films.inverse	1.0843112	6	Scientist | NASA Director | Protester | Susan's Best Friend | INCO Gold | Reporter #6 | Kim | Neil Armstrong | Susan Lovell | Anchor #1 | [ and 89 more. ]
+
+True hyperpaths:
+m.011yd2	432.31960525895	http://rdf.freebase.com/ns/film.film_story_contributor.film_story_credits.2	http://rdf.freebase.com/ns/film.film_story_contributor.film_story_credits.1	-7.966603	2	Jeffrey Kluger | Jim Lovell
+m.011yd2	432.31960525895	http://rdf.freebase.com/ns/film.film.story_by.1	http://rdf.freebase.com/ns/film.film.story_by.2	-6.010862	2	Jeffrey Kluger | Jim Lovell
+
+Gold entities:
+Jim Lovell
+
+Error type: 
+multi entity
+
+
+Question 93:
+Who does Lee Clark manager ?
+
+Predictions:
+m.041xst	32533.257931915	http://rdf.freebase.com/ns/sports.pro_athlete.teams	http://rdf.freebase.com/ns/sports.sports_team.roster.inverse	1.9189157	49	Newcastle United F.C.
+
+True hyperpaths:
+
+Gold entities:
+Birmingham City F.C.
+
+Error type: 
+no gold
+
+
+Question 94:
+When is the rainy season in Bangkok Thailand ?
+
+Predictions:
+m.07f1x	4466.54732853712	http://rdf.freebase.com/ns/location.location.time_zones.1	http://rdf.freebase.com/ns/location.location.time_zones.2	1.2818792	69	UTC+07:00
+
+True hyperpaths:
+m.0fn2g	19266.6955097146	http://rdf.freebase.com/ns/travel.travel_destination.climate	http://rdf.freebase.com/ns/travel.travel_destination_monthly_climate.month	-15.435036	1	April | July | December | March | May | June | January | September | February | November | [ and 2 more. ]
+m.0fn2g	19266.6955097146	http://rdf.freebase.com/ns/travel.travel_destination_monthly_climate.travel_destination.inverse	http://rdf.freebase.com/ns/travel.travel_destination_monthly_climate.month	-15.578209	1	April | July | December | March | May | June | January | September | February | November | [ and 2 more. ]
+
+Gold entities:
+September
+
+Error type: 
+gold relation wrong
+
+
+Question 95:
+What is San Francisco ZIP code ?
+
+Predictions:
+m.0d6lp	59888.2941185755	http://rdf.freebase.com/ns/location.citytown.postal_codes.1	http://rdf.freebase.com/ns/location.citytown.postal_codes.2	1.5664089	15	94199 | 94124 | 94188 | 94105 | 94104 | 94144 | 94171 | 94160 | 94132 | 94159 | [ and 48 more. ]
+
+True hyperpaths:
+m.0d6lp	59888.2941185755	http://rdf.freebase.com/ns/location.mailing_address.state_province_region.inverse	http://rdf.freebase.com/ns/location.mailing_address.postal_code	-2.1456347	1	94109 | 94105 | 94104 | 94102 | 94115 | 94111 | 94103 | 94301 | 94710 | 94107 | [ and 2 more. ]
+
+Gold entities:
+94109	94108	94102	94101	94103	94111	94105	94104	94107	94110
+
+Error type: 
+gold relation wrong
+
+
+Question 96:
+What to do in Paris in 1 day ?
+
+Predictions:
+m.05qtj	44793.461803406	http://rdf.freebase.com/ns/user.carmenmfenn1.default_domain.cityscape.parks.1	http://rdf.freebase.com/ns/user.carmenmfenn1.default_domain.cityscape.parks.2	2.3562143	5	Parc de la Villette | Jardin du Luxembourg | Trocadéro | Bois de Boulogne | Gare de Parc de Sceaux | Tuileries Garden | Bois de Vincennes
+
+True hyperpaths:
+m.05qtj	44793.461803406	http://rdf.freebase.com/ns/travel.tourist_attraction.near_travel_destination.2	http://rdf.freebase.com/ns/travel.tourist_attraction.near_travel_destination.1	1.6242554	69	Disneyland Park | Verdon Gorge | Louvre | Musée d'Orsay | Eiffel Tower | Parc Astérix | Basilica of the Sacré Cœur | The Great Dune of Pyla | Palace of Versailles | Petit Palais | [ and 16 more. ]
+m.05qtj	44793.461803406	http://rdf.freebase.com/ns/travel.travel_destination.tourist_attractions.1	http://rdf.freebase.com/ns/travel.travel_destination.tourist_attractions.2	1.8520055	71	Disneyland Park | Verdon Gorge | Louvre | Musée d'Orsay | Eiffel Tower | Parc Astérix | Basilica of the Sacré Cœur | The Great Dune of Pyla | Palace of Versailles | Petit Palais | [ and 16 more. ]
+
+Gold entities:
+Musée Maillol	Palace of Versailles	Eiffel Tower	Île de la Cité	Café Volpini	Notre Dame de Paris	Folies Bergère	Arc de Triomphe	Basilica of the Sacré Cœur	Panthéon, Paris
+
+Error type: 
+wrong relation (less frequent) (similar type)
+
+
+Question 97:
+What killed John Bonham ?
+
+Predictions:
+m.015pvx	8589.95250285426	http://rdf.freebase.com/ns/music.group_member.instruments_played.1	http://rdf.freebase.com/ns/music.group_member.instruments_played.2	1.6039717	10	Drums | Percussion | Drum
+
+True hyperpaths:
+m.015pvx	8589.95250285426	http://rdf.freebase.com/ns/people.cause_of_death.people.2	http://rdf.freebase.com/ns/people.cause_of_death.people.1	1.3491173	60	Inhalation of vomit
+m.015pvx	8589.95250285426	http://rdf.freebase.com/ns/people.deceased_person.cause_of_death.1	http://rdf.freebase.com/ns/people.deceased_person.cause_of_death.2	1.1936727	60	Inhalation of vomit
+
+Gold entities:
+Inhalation of vomit
+
+Error type: 
+wrong relation (less frequent) (different type)
+
+
+Question 98:
+Who did Marilyn Monroe marry at 16 ?
+
+Predictions:
+m.04wqr	8362.7870644555	http://rdf.freebase.com/ns/location.location.people_born_here.2	http://rdf.freebase.com/ns/location.location.people_born_here.1	1.718236	105	Los Angeles
+
+True hyperpaths:
+m.04wqr	8362.7870644555	http://rdf.freebase.com/ns/people.marriage.spouse.inverse	http://rdf.freebase.com/ns/people.person.spouse_s.inverse	-4.592814	75	Joe DiMaggio | James Dougherty | Arthur Miller | Marilyn Monroe
+m.04wqr	8362.7870644555	http://rdf.freebase.com/ns/people.person.spouse_s	http://rdf.freebase.com/ns/people.person.spouse_s.inverse	-6.572206	75	Joe DiMaggio | James Dougherty | Arthur Miller | Marilyn Monroe
+m.04wqr	8362.7870644555	http://rdf.freebase.com/ns/people.person.spouse_s	http://rdf.freebase.com/ns/people.marriage.spouse	-4.5681996	75	Joe DiMaggio | James Dougherty | Arthur Miller | Marilyn Monroe
+m.04wqr	8362.7870644555	http://rdf.freebase.com/ns/people.marriage.spouse.inverse	http://rdf.freebase.com/ns/people.marriage.spouse	-5.9188924	75	Joe DiMaggio | James Dougherty | Arthur Miller | Marilyn Monroe
+
+Gold entities:
+James Dougherty
+
+Error type: 
+complex reasoning|wrong relation (more frequent) (different type)
+
+
+Question 99:
+What are the major cities in Ukraine ?
+
+Predictions:
+m.07t21	34108.0789908366	http://rdf.freebase.com/ns/base.aareas.schema.administrative_area.administrative_children.1	http://rdf.freebase.com/ns/base.aareas.schema.administrative_area.administrative_children.2	1.1948564	10	Dnipropetrovsk Oblast | Poltava Oblast | Kirovohrad Oblast | Vinnytsia Oblast | Khmelnytskyi Oblast | Kharkiv Oblast | Crimea | Zhytomyr Oblast | Volyn Oblast | Kiev Oblast | [ and 17 more. ]
+
+True hyperpaths:
+m.07t21	34108.0789908366	http://rdf.freebase.com/ns/location.mailing_address.state_province_region.inverse	http://rdf.freebase.com/ns/location.mailing_address.citytown	-1.3045189	4	Kiev
+m.07t21	34108.0789908366	http://rdf.freebase.com/ns/location.country.capital.1	http://rdf.freebase.com/ns/location.country.capital.2	1.1794856	25	Kiev
+m.07t21	34108.0789908366	http://rdf.freebase.com/ns/base.biblioness.bibs_location.country.2	http://rdf.freebase.com/ns/base.biblioness.bibs_location.country.1	-2.9649951	1	Kiev
+
+Gold entities:
+Kiev
+
+Error type: 
+wrong relation (more frequent) (similar type)
+
+
+Question 100:
+What languages do people speak in Spain ?
+
+Predictions:
+m.06mkj	23285.5607816709	http://rdf.freebase.com/ns/location.country.languages_spoken.1	http://rdf.freebase.com/ns/location.country.languages_spoken.2	1.9230995	59	Catalan language | Galician Language | Basque Language | Occitan language
+
+True hyperpaths:
+m.06mkj	23285.5607816709	http://rdf.freebase.com/ns/location.country.official_language.1	http://rdf.freebase.com/ns/location.country.official_language.2	1.8156073	77	Spanish Language
+
+Gold entities:
+Spanish Language
+
+Error type: 
+gold answer wrong

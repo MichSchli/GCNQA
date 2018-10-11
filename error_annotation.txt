@@ -1,0 +1,9 @@
+Question 1:
+Where was Caesar when he was stabbed ?
+
+Predictions:
+m.0gzh	5.19041077174075	http://rdf.freebase.com/ns/government.politician.government_positions_held	http://rdf.freebase.com/ns/government.government_office_or_title.office_holders.inverse	2.1849728	19
+
+True hyperpaths:
+m.041wm	229.789481016267	http://rdf.freebase.com/ns/user.alexander.misc.murdered_person.place_murdered.1	http://rdf.freebase.com/ns/user.alexander.misc.murdered_person.place_murdered.2	-3.003561	4
+m.041wm	229.789481016267	http://rdf.freebase.com/ns/people.deceased_person.place_of_death.1	http://rdf.freebase.com/ns/people.deceased_person.place_of_death.2	-2.1270218	58

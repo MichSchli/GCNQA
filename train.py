@@ -40,5 +40,5 @@ def print_debug():
 
 
 for i in range(20):
-    interface.train(5)
+    interface.train(10)
     print_debug()

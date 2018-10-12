@@ -204,7 +204,7 @@
             <layer_dropout>0.3</layer_dropout>
         </component>
         <edge>
-                <source socket="word_embedding">elmo</source>
+                <source socket="word_embeddings">elmo</source>
                 <target socket="input">encoder</target>
         </edge>
 
@@ -215,12 +215,12 @@
                 <target socket="left">end_concat</target>
         </edge>
         <edge>
-                <source socket="output">encoder</source>
+                <source socket="final_state">encoder</source>
                 <target socket="right">end_concat</target>
         </edge>
 
         <component name="mlp" type="MultilayerPerceptron" language="tensorflow">
-            <dimensions>1105,200,1</dimensions>
+            <dimensions>281,200,200,1</dimensions>
             <dropout_rate>0.5</dropout_rate>
             <mark socket="output">prediction</mark>
         </component>

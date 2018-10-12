@@ -15,7 +15,7 @@ class VirtuosoGraphReader:
     def start_new_entity(self):
         self.suboptimal_rels = None
 
-    def query(self, entity, rel_1, rel_2):
+    def query(self, entity, rel_1, rel_2, skip_names=False):
         if rel_1.endswith(".1") and rel_2.endswith(".2") and rel_1[:-2] == rel_2[:-2]:
             rel = rel_1[:-2]
             targets = self.query_single(entity, rel, inverse=False)
@@ -35,7 +35,7 @@ class VirtuosoGraphReader:
         return_val = []
         for target in targets:
             names = []
-            if target.startswith(self.prefix):
+            if not skip_names and target.startswith(self.prefix):
                 names = self.get_names(target)
 
             if len(names) == 0:
@@ -82,6 +82,9 @@ class VirtuosoGraphReader:
         return [r["o"]["value"] for r in results["results"]["bindings"]]
 
     def get_names(self, entity):
+        if not entity.startswith(self.prefix):
+            return []
+
         db_interface = self.initialize_sparql_interface()
 
         query_string = "PREFIX ns: <" + self.prefix + ">\n"
@@ -90,6 +93,21 @@ class VirtuosoGraphReader:
         query_string += "filter ( "
         query_string += "\nlang(?o) = 'en'"
         query_string += " )\n"
+
+        query_string += "}"
+        results = self.execute_query(db_interface, query_string)
+
+        return [r["o"]["value"] for r in results["results"]["bindings"]]
+
+    def get_types(self, entity):
+        if not entity.startswith(self.prefix):
+            return []
+
+        db_interface = self.initialize_sparql_interface()
+
+        query_string = "PREFIX ns: <" + self.prefix + ">\n"
+        query_string += "select * where {\n"
+        query_string += "ns:" + entity.split("/ns/")[-1] + " ns:type.object.type ?o .\n"
 
         query_string += "}"
         results = self.execute_query(db_interface, query_string)

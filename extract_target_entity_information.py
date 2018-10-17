@@ -35,14 +35,15 @@ def get_indexes(key, e_dict, rel_cache):
     returned_indexes = []
     predicted_entities = graph_reader.query(entity, relation_1, relation_2, skip_names=True)
     for entity in predicted_entities:
+        entity = entity.strip()
         if entity in e_dict:
             returned_indexes.append(e_dict[entity][0])
         else:
             idx = len(e_dict)
-            e_names = graph_reader.get_names(entity)
+            e_names = [name.replace("\n", "") for name in graph_reader.get_names(entity)]
             e_types = graph_reader.get_types(entity)
 
-            e_dict[entity] = [idx, [entity, "|".join(e_names), "|".join(e_types)]]
+            e_dict[entity] = [idx, [str(idx), entity, "|".join(e_names), "|".join(e_types)]]
 
             returned_indexes.append(idx)
 
@@ -57,7 +58,15 @@ with open(args.entity_file, 'r') as e_file:
         line = line.strip()
         if line:
             parts = line.split("\t")
-            e_dict[parts[0]] = [counter, parts]
+
+            if len(parts) == 1:
+                parts += ["", "", ""]
+            elif len(parts) == 2:
+                parts += ["", ""]
+            elif len(parts) == 3:
+                parts += [""]
+
+            e_dict[parts[1]] = [counter, parts]
 
             counter += 1
 
@@ -92,7 +101,7 @@ with open(args.relation_file, 'r') as r_file:
 
 # write to cache file
 with open(cachefile, 'wb') as cachehandle:
-    print("saving relation cache as '%s'" % cachefile, file=sys.stderr)
+    print("\nsaving relation cache as '%s'" % cachefile, file=sys.stderr)
     pickle.dump(rel_cache, cachehandle)
 
 organized_dict = sorted(e_dict.values(), key=lambda x: x[0])
@@ -100,9 +109,11 @@ organized_dict = sorted(e_dict.values(), key=lambda x: x[0])
 first = True
 with open(args.entity_file, 'w') as e_file:
     for idx, entity_line in organized_dict:
+        print("Writing entity #"+str(idx) + ": " + entity_line[1], end="\r", file=sys.stderr)
         entity_str = entity_line[0]
         entity_str += "\t" + entity_line[1]
         entity_str += "\t" + entity_line[2]
+        entity_str += "\t" + entity_line[3]
 
         if first:
             first = False

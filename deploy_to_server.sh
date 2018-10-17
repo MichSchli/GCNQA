@@ -1,5 +1,6 @@
 #!/bin/bash
 
-SERVER=logicgpu2
+LOGICGPU=$1
+SERVER=logicgpu$LOGICGPU
 
-rsync -avh . $SERVER:/home/mschlic1/GCNQA_mindblocks
+rsync --update -avh . $SERVER:/home/mschlic1/GCNQA_mindblocks

@@ -287,6 +287,7 @@ class VirtuosoGraphReader:
         query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/base.yupgrade.user.topics\" )"
         query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/common.topic.description\" )"
         query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/common.document.text\" )"
+        query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/common.topic.alias\" )"
         query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/type.type.instance\" )"
         query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/type.object.type\" )"
         query_string += "\n&& !strstarts(str(?r), \"http://rdf.freebase.com/ns/type.object.name\" )"

@@ -37,7 +37,7 @@ for pred, rel in zip(pred_file, rel_file):
 
         if curr_best is not None:
             rel_parts = curr_best.strip().split("\t")
-            print("\t".join([rel_parts[0], rel_parts[2], rel_parts[3], rel_parts[4]]), end="")
+            print("\t".join([rel_parts[0]] + rel_parts[2:]), end="")
 
         curr_best = None
         curr_best_score = None

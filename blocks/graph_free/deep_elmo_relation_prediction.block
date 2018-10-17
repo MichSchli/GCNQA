@@ -25,11 +25,9 @@
     </configuration>
     <canvas name="main">
         <component name="sentence_reader" type="ConllReader">
-            <file_path>$data_folder/$mode_folder/sentences.conll</file_path>
+            <file_path>$data_folder/$mode_folder/sentences.lowercased.conll</file_path>
             <columns>int,string,string,string,string</columns>
             <read_column>1</read_column>
-            <start_token>&lt;s&gt;</start_token>
-            <stop_token>&lt;/s&gt;</stop_token>
         </component>
 
         <component name="relation_reader" type="ListReader">
@@ -204,8 +202,9 @@
             <layer_dropout>0.3</layer_dropout>
         </component>
         <edge>
-                <source socket="word_embeddings">elmo</source>
-                <target socket="input">encoder</target>
+            <source socket="word_embeddings">elmo</source>
+            <target socket="input">encoder</target>
+            <dropout>0.5</dropout>
         </edge>
 
         <component name="end_concat" type="Concat" language="tensorflow">
